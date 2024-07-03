@@ -1,0 +1,17 @@
+/* 
+     * icon
+     * container
+*/
+
+/* icon */
+.icon-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* container */
+.container-pc {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
