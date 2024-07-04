@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
-    <!-- Theme Style -->
+    <title>Blog Details</title>
+    <!-- Theme Style global -->
     <link
       rel="stylesheet"
       type="text/css"
       href="./assets/stylesheets/styles.css"
+    />
+    <!-- Theme Style blog details-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/stylesheets/styles_blog_details.css"
     />
     <!-- Bootstrap 5.0.2 -->
     <link
@@ -18,15 +23,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!-- animation -->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="./assets/stylesheets/animation.css"
-    />
   </head>
   <body>
-    <!-- blog -->
     <div class="boxed">
       <!-- Header -->
       <header id="header" class="header">
@@ -77,7 +75,7 @@
           >
             <!-- logo -->
             <a
-              href="#"
+              href="index.html"
               class="logo text-decoration-none d-flex justify-content-between align-items-center"
             >
               <img src="./assets/images/Logo.png" alt="imgLogo" />
@@ -90,10 +88,10 @@
                 class="navList d-flex align-items-center justify-content-between m-0 p-lg-0"
               >
                 <li>
-                  <a href="#" class="active">home</a>
+                  <a href="index.html">home</a>
                 </li>
                 <li>
-                  <a href="blog_details.html">about</a>
+                  <a href="#" class="active">about</a>
                 </li>
                 <li>
                   <a href="#">home</a>
@@ -150,167 +148,234 @@
         </div>
       </slider>
       <!-- /slider -->
-      <!-- blog content -->
-      <section class="blog container-pc">
-        <!-- blog1 -->
-        <div class="blog-item" style="--time: 1.2s">
-          <img src="./assets/images/blog1.png" alt="img blog" />
-          <div class="blog-item--content">
-            <div class="d-flex align-items-end">
-              <div class="content-date">
-                <p>30</p>
-                <p>aug</p>
+      <!-- content -->
+      <section
+        class="blog-container container-pc d-flex justify-content-between"
+      >
+        <article class="blog-content">
+          <div class="warap-img">
+            <img src="./assets/images/blog1.png" alt="img blog" />
+            <div class="blog-content-date content-center flex-column">
+              <strong>31</strong>
+              <span>July 2023</span>
+            </div>
+          </div>
+          <div class="authorAndQtComment d-inline">
+            <span class="icon-user-solid-circle color-primary"></span>
+            <span class="text-content">By Admin</span>
+          </div>
+          <div class="authorAndQtComment d-inline">
+            <span class="icon-comments color-primary"></span>
+            <span class="text-content">2 Comment</span>
+          </div>
+          <h2 class="blog-title title">
+            We Help You Drive Properly on the Road
+          </h2>
+          <p class="text-content">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteradution in some form by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going There are many variations of passages
+            of Lorem Ipsum available, but the majority have suffered
+            alteradution in some form by injected humour, or randomised words
+            which don't look even slightly believable. If you are going
+          </p>
+          <p class="text-content">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteradution in some form by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going
+          </p>
+          <!-- blog button -->
+          <div
+            class="blog-button d-flex justify-content-between align-items-center"
+          >
+            <div class="blog-button--wrap">
+              <h4 class="title">Post In:</h4>
+              <div class="button-primary">
+                <span>Search</span>
               </div>
-              <div class="content-comment">
-                <span class="icon-comments"></span>
-                <span>2 Comment</span>
+              <div class="button-primary">
+                <span>Seo</span>
               </div>
             </div>
-            <h3 class="content-title">
-              10 Simple Practices that Will Help You Get 1% Better Every Day
-            </h3>
-            <a
-              href="#"
-              class="d-flex justify-content-between align-items-center"
-            >
-              <span>Read more</span>
-              <span class="icon-arrow-right2"></span>
-            </a>
-          </div>
-        </div>
-        <!-- blog2 -->
-        <div class="blog-item" style="--time: 1.4s">
-          <img src="./assets/images/blog2.png" alt="img blog" />
-          <div class="blog-item--content">
-            <div class="d-flex align-items-end">
-              <div class="content-date">
-                <p>30</p>
-                <p>aug</p>
-              </div>
-              <div class="content-comment">
-                <span class="icon-comments"></span>
-                <span>2 Comment</span>
-              </div>
+            <div class="blog-tags">
+              <h4>Tags</h4>
+              <span>Safty, Learning</span>
             </div>
-            <h3 class="content-title">
-              10 Simple Practices that Will Help You Get 1% Better Every Day
-            </h3>
-            <a
-              href="#"
-              class="d-flex justify-content-between align-items-center"
-            >
-              <span>Read more</span>
-              <span class="icon-arrow-right2"></span>
-            </a>
           </div>
-        </div>
-        <!-- blog3 -->
-        <div class="blog-item" style="--time: 1.5s">
-          <img src="./assets/images/blog3.png" alt="img blog" />
-          <div class="blog-item--content">
-            <div class="d-flex align-items-end">
-              <div class="content-date">
-                <p>30</p>
-                <p>aug</p>
-              </div>
-              <div class="content-comment">
-                <span class="icon-comments"></span>
-                <span>2 Comment</span>
-              </div>
+          <!-- comments -->
+          <div class="blog-comments">
+            <h3>2 Comments</h3>
+            <div class="comment-item">
+              <img src="./assets/images/user1.png" alt="img user" />
+              <div class="name">David Shon</div>
+              <p>
+                Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam
+                nec eros id magna hendrerit sagittis. Nullam sed mi non odio
+                feugiat volutpat sit amet nec elit.
+              </p>
+              <button>Reply</button>
             </div>
-            <h3 class="content-title">
-              10 Simple Practices that Will Help You Get 1% Better Every Day
-            </h3>
-            <a
-              href="#"
-              class="d-flex justify-content-between align-items-center"
-            >
-              <span>Read more</span>
-              <span class="icon-arrow-right2"></span>
-            </a>
-          </div>
-        </div>
-        <!-- blog4 -->
-        <div class="blog-item" style="--time: 1.6s">
-          <img src="./assets/images/blog4.png" alt="img blog" />
-          <div class="blog-item--content">
-            <div class="d-flex align-items-end">
-              <div class="content-date">
-                <p>30</p>
-                <p>aug</p>
-              </div>
-              <div class="content-comment">
-                <span class="icon-comments"></span>
-                <span>2 Comment</span>
-              </div>
+            <div class="comment-item">
+              <img src="./assets/images/user2.png" alt="img user" />
+              <div class="name">Jhon Watchson</div>
+              <p>
+                Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam
+                nec eros id magna hendrerit sagittis. Nullam sed mi non odio
+                feugiat volutpat sit amet nec elit.
+              </p>
+              <button>Reply</button>
             </div>
-            <h3 class="content-title">
-              10 Simple Practices that Will Help You Get 1% Better Every Day
-            </h3>
-            <a
-              href="#"
-              class="d-flex justify-content-between align-items-center"
-            >
-              <span>Read more</span>
-              <span class="icon-arrow-right2"></span>
-            </a>
           </div>
-        </div>
-        <!-- blog5 -->
-        <div class="blog-item" style="--time: 1.7s">
-          <img src="./assets/images/blog5.png" alt="img blog" />
-          <div class="blog-item--content">
-            <div class="d-flex align-items-end">
-              <div class="content-date">
-                <p>30</p>
-                <p>aug</p>
-              </div>
-              <div class="content-comment">
-                <span class="icon-comments"></span>
-                <span>2 Comment</span>
-              </div>
+          <!-- leave comment -->
+          <form class="leaveComment">
+            <h3>Leave a Comment</h3>
+            <div>
+              <input type="text" placeholder="Your Name" />
+              <input type="email" placeholder="Email Address" />
             </div>
-            <h3 class="content-title">
-              10 Simple Practices that Will Help You Get 1% Better Every Day
-            </h3>
-            <a
-              href="#"
-              class="d-flex justify-content-between align-items-center"
-            >
-              <span>Read more</span>
-              <span class="icon-arrow-right2"></span>
-            </a>
-          </div>
-        </div>
-        <!-- blog 6 -->
-        <div class="blog-item" style="--time: 1.8s">
-          <img src="./assets/images/blog6.png" alt="img blog" />
-          <div class="blog-item--content">
-            <div class="d-flex align-items-end">
-              <div class="content-date">
-                <p>30</p>
-                <p>aug</p>
-              </div>
-              <div class="content-comment">
-                <span class="icon-comments"></span>
-                <span>2 Comment</span>
-              </div>
+            <textarea name="content" placeholder="Write a Message"></textarea>
+            <button class="button-primary">Leave a Comment</button>
+          </form>
+        </article>
+        <section class="blog-right">
+          <div class="search">
+            <div class="search-input">
+              <span class="icon-search"></span>
+              <input type="email" />
             </div>
-            <h3 class="content-title">
-              10 Simple Practices that Will Help You Get 1% Better Every Day
-            </h3>
-            <a
-              href="#"
-              class="d-flex justify-content-between align-items-center"
-            >
-              <span>Read more</span>
-              <span class="icon-arrow-right2"></span>
-            </a>
           </div>
-        </div>
+          <!-- latest post  -->
+          <div class="latest-post">
+            <h4>Latest Post</h4>
+            <ul class="list-post">
+              <li>
+                <a href="#">
+                  <img
+                    src="./assets/images/latestPost1.png"
+                    alt="img latest post"
+                  />
+                  <div>
+                    <div>
+                      <span class="icon-watch_later"></span>
+                      <span>26 Mar, 2023</span>
+                    </div>
+                    <h5>The Complete Web Developer Guideline</h5>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./assets/images/latestPost2.png"
+                    alt="img latest post"
+                  />
+                  <div>
+                    <div>
+                      <span class="icon-watch_later"></span>
+                      <span>26 Mar, 2023</span>
+                    </div>
+                    <h5>The Complete Web Developer Guideline</h5>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./assets/images/latestPost3.png"
+                    alt="img latest post"
+                  />
+                  <div>
+                    <div>
+                      <span class="icon-watch_later"></span>
+                      <span>26 Mar, 2023</span>
+                    </div>
+                    <h5>The Complete Web Developer Guideline</h5>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- categories -->
+          <div class="categories">
+            <h4>Categories</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><span class="icon-chevrons-right"></span>
+                  <p>Web Development</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon-chevrons-right"></span>
+                  <p>Social Marketing</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon-chevrons-right"></span>
+                  <p>Technology</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon-chevrons-right"></span>
+                  <p>Business & Finance</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon-chevrons-right"></span>
+                  <p>Digital Solution</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Tags -->
+          <div class="tags">
+            <h4>Tags</h4>
+            <div>
+              <button class="button-primary2">Marketing</button>
+              <button class="button-primary2">Development</button>
+              <button class="button-primary2">Digital</button>
+              <button class="button-primary2">Design</button>
+            </div>
+          </div>
+          <!-- comments -->
+          <div>
+            <h4>Comments</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="icon-commenting-o"></span>
+                  <p>There are many variations of Lorem available Here</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon-commenting-o"></span>
+                  <p>There are many variations of Lorem available Here</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon-commenting-o"></span>
+                  <p>There are many variations of Lorem available Here</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon-commenting-o"></span>
+                  <p>There are many variations of Lorem available Here</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </section>
-      <!-- /blog content -->
-       
+      <!-- /content -->
       <!-- footer -->
       <footer class="footer">
         <div class="container-pc">
@@ -428,14 +493,5 @@
       </footer>
       <!-- /footer -->
     </div>
-    <!-- Bootstrap 5.0.2 -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- jquery -->
-    <script src="./assets/javascripts/jquery.js"></script>
-    <!-- script -->
   </body>
 </html>

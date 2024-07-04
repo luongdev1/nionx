@@ -1,10 +1,18 @@
 /* 
-     * icon
-     * container
+    * color
+    * icon
+    * container
+    * button
+    * title
 */
 
+/* color */
+.color-primary {
+  color: var(--color-primary);
+}
 /* icon */
-.icon-center {
+.icon-center,
+.content-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,4 +22,71 @@
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
+}
+/* button */
+.button-primary {
+  color: var(--color-white);
+  padding: 10px 40px 10px 40px;
+  background-color: var(--color-primary);
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.button-primary2 {
+}
+.button-animate,
+.button-animate2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.button-animate::after {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.button-animate2::after {
+  background-color: var(--color-white);
+  color: var(--color-title);
+}
+.button-animate::after,
+.button-animate2::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.button-animate:hover:after,
+.button-animate2:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.button-animate:hover span {
+  color: var(--color-white);
+}
+.button-animate2:hover span {
+  color: var(--color-title);
+}
+
+.button-animate:hover span,
+.button-animate2:hover span {
+  z-index: 20;
+  transition: all 0.1s ease-in-out;
+  font-weight: 600;
+}
+/* title */
+.title {
+  color: var(--color-title);
+  font-weight: 700;
+  font-size: 30px;
+}
+.text-content {
+  color: var(--color-text-comment);
+  line-height: 30px;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
