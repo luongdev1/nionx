@@ -23,6 +23,12 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/stylesheets/animation.css"
+    />
   </head>
   <body>
     <div class="boxed">
@@ -153,25 +159,25 @@
         class="blog-container container-pc d-flex justify-content-between"
       >
         <article class="blog-content">
-          <div class="warap-img">
+          <div class="warap-img hidden" style="--time: 1s">
             <img src="./assets/images/blog1.png" alt="img blog" />
             <div class="blog-content-date content-center flex-column">
               <strong>31</strong>
               <span>July 2023</span>
             </div>
           </div>
-          <div class="authorAndQtComment d-inline">
+          <div class="authorAndQtComment d-inline animate-text-1" style="--time: 1.2s">
             <span class="icon-user-solid-circle color-primary"></span>
             <span class="text-content">By Admin</span>
           </div>
-          <div class="authorAndQtComment d-inline">
+          <div class="authorAndQtComment d-inline animate-text-1" style="--time: 1.4s">
             <span class="icon-comments color-primary"></span>
             <span class="text-content">2 Comment</span>
           </div>
-          <h2 class="blog-title title">
+          <h2 class="blog-title title animate-text-1" style="--time: 1.6s">
             We Help You Drive Properly on the Road
           </h2>
-          <p class="text-content">
+          <p class="text-content animate-text-1" style="--time: 1.8s">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteradution in some form by injected
             humour, or randomised words which don't look even slightly
@@ -180,7 +186,7 @@
             alteradution in some form by injected humour, or randomised words
             which don't look even slightly believable. If you are going
           </p>
-          <p class="text-content">
+          <p class="text-content animate-text-1" style="--time: 2s">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteradution in some form by injected
             humour, or randomised words which don't look even slightly
@@ -258,7 +264,7 @@
         <section class="blog-right d-flex flex-column">
           <div class="search">
             <div
-              class="search-input d-flex justify-content-between align-items-center"
+              class="search-input animate-item--right hidden d-flex justify-content-between align-items-center"
             >
               <span class="icon-search"></span>
               <input type="email" placeholder="Type here" />
@@ -270,7 +276,7 @@
             <ul
               class="list-post m-0 d-flex flex-column justify-content-between"
             >
-              <li>
+              <li class="animate-item--right hidden">
                 <a
                   href="#"
                   class="text-decoration-none d-flex justify-content-between align-items-center"
@@ -289,7 +295,7 @@
                 </a>
               </li>
 
-              <li>
+              <li class="animate-item--right hidden">
                 <a
                   href="#"
                   class="text-decoration-none d-flex justify-content-between align-items-center"
@@ -307,7 +313,7 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="animate-item--right hidden">
                 <a
                   href="#"
                   class="text-decoration-none d-flex justify-content-between align-items-center"
@@ -331,32 +337,42 @@
           <div class="categories blog-right--boxshadow">
             <h4 class="blog-right--title">Categories</h4>
             <ul class="d-flex flex-column">
-              <li>
-                <a href="#" class="text-decoration-none d-flex align-items-center " 
+              <li class="animate-item--right hidden">
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex align-items-center"
                   ><span class="icon-chevrons-right color-primary"></span>
                   <p>Web Development</p>
                 </a>
               </li>
-              <li>
-                <a href="#" class="text-decoration-none d-flex align-items-center " 
+              <li class="animate-item--right hidden">
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex align-items-center"
                   ><span class="icon-chevrons-right color-primary"></span>
                   <p>Social Marketing</p>
                 </a>
               </li>
-              <li>
-                <a href="#" class="text-decoration-none d-flex align-items-center " 
+              <li class="animate-item--right hidden">
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex align-items-center"
                   ><span class="icon-chevrons-right color-primary"></span>
                   <p>Technology</p>
                 </a>
               </li>
-              <li>
-                <a href="#" class="text-decoration-none d-flex align-items-center " 
+              <li class="animate-item--right hidden">
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex align-items-center"
                   ><span class="icon-chevrons-right color-primary"></span>
                   <p>Business & Finance</p>
                 </a>
               </li>
-              <li>
-                <a href="#" class="text-decoration-none d-flex align-items-center " 
+              <li class="animate-item--right hidden">
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex align-items-center"
                   ><span class="icon-chevrons-right color-primary"></span>
                   <p>Digital Solution</p>
                 </a>
@@ -367,16 +383,16 @@
           <div class="tags blog-right--boxshadow">
             <h4 class="blog-right--title">Tags</h4>
             <div>
-              <button class="button-animate button-primary">
+              <button class="button-animate button-primary animate-item--right">
                 <span>Marketing</span>
               </button>
-              <button class="button-animate button-primary">
+              <button class="button-animate button-primary animate-item--right">
                 <span>Development</span>
               </button>
-              <button class="button-animate button-primary">
+              <button class="button-animate button-primary animate-item--right">
                 <span>Digital</span>
               </button>
-              <button class="button-animate button-primary">
+              <button class="button-animate button-primary animate-item--right">
                 <span>Design</span>
               </button>
             </div>
@@ -385,26 +401,38 @@
           <div class="comments blog-right--boxshadow">
             <h4 class="blog-right--title">Comments</h4>
             <ul class="p-0 m-0">
-              <li>
-                <a href="#" class="d-inline-flex align-items-center text-decoration-none">
+              <li class="animate-item--right hidden">
+                <a
+                  href="#"
+                  class="d-inline-flex align-items-center text-decoration-none"
+                >
                   <span class="icon-commenting-o color-primary"></span>
                   <p>There are many variations of Lorem available Here</p>
                 </a>
               </li>
-              <li>
-                <a href="#" class="d-inline-flex align-items-center text-decoration-none">
+              <li class="animate-item--right hidden">
+                <a
+                  href="#"
+                  class="d-inline-flex align-items-center text-decoration-none"
+                >
                   <span class="icon-commenting-o color-primary"></span>
                   <p>There are many variations of Lorem available Here</p>
                 </a>
               </li>
-              <li>
-                <a href="#" class="d-inline-flex align-items-center text-decoration-none">
+              <li class="animate-item--right hidden">
+                <a
+                  href="#"
+                  class="d-inline-flex align-items-center text-decoration-none"
+                >
                   <span class="icon-commenting-o color-primary"></span>
                   <p>There are many variations of Lorem available Here</p>
                 </a>
               </li>
-              <li>
-                <a href="#" class="d-inline-flex align-items-center text-decoration-none">
+              <li class="animate-item--right hidden">
+                <a
+                  href="#"
+                  class="d-inline-flex align-items-center text-decoration-none"
+                >
                   <span class="icon-commenting-o color-primary"></span>
                   <p>There are many variations of Lorem available Here</p>
                 </a>
@@ -458,7 +486,7 @@
           <div class="footer-box d-flex justify-content-between">
             <div class="footer-information d-flex justify-content-between">
               <ul class="information-company" style="--time: 1s">
-                <li>
+                <li class="animate-item--right hidden">
                   <h4>company</h4>
                 </li>
                 <li>
@@ -531,5 +559,9 @@
       </footer>
       <!-- /footer -->
     </div>
+    <!-- jquery -->
+    <script src="assets/javascripts/jquery.js"></script>
+    <!-- script -->
+    <script src="assets/javascripts/animate.js"></script>
   </body>
 </html>

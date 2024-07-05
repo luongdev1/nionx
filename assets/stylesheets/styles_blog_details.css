@@ -206,7 +206,7 @@
 .blog-right .categories ul {
   gap: 16px;
   margin-bottom: 0;
-  padding: 0;
+  padding: 30px 0 0 0;
 }
 /* tags */
 .blog-right .tags div {

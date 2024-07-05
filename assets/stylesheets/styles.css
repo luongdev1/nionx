@@ -691,9 +691,9 @@ button {
   overflow: hidden;
 }
 
-.blog-item {
+/* .blog-item {
   animation: showItemDownToUp var(--time) linear forwards;
-}
+} */
 
 .blog-item img {
   width: 100%;
@@ -824,11 +824,6 @@ button {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
-/* animate */
-.footer-heading .logo,
-.footer-social li {
-  animation: showItemDownToUp var(--time) ease-in-out;
-}
 /* footer box */
 .footer {
   position: relative;
@@ -874,10 +869,7 @@ button {
   flex-grow: 1;
   max-width: 370px;
 }
-.footer-information ul,
-.footer-sendMail {
-  animation: showItemDownToUp var(--time) ease-in-out;
-}
+ 
 .footer-sendMail input[type="email"] {
   border: none;
   background-color: var(--color-white);
