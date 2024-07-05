@@ -113,7 +113,7 @@
                 </li>
               </ul>
             </nav>
-            <button class="button-contact button-animate">
+            <button class="button-contact button-primary button-animate">
               <span>Contact Us</span>
             </button>
           </div>
@@ -190,106 +190,136 @@
           <div
             class="blog-button d-flex justify-content-between align-items-center"
           >
-            <div class="blog-button--wrap">
+            <div
+              class="blog-button--wrap d-inline-flex justify-content-between align-items-center"
+            >
               <h4 class="title">Post In:</h4>
-              <div class="button-primary">
+              <button class="button-primary-2 button-animate-2">
                 <span>Search</span>
-              </div>
-              <div class="button-primary">
+              </button>
+              <button class="button-primary-2 button-animate-2">
                 <span>Seo</span>
-              </div>
+              </button>
             </div>
-            <div class="blog-tags">
-              <h4>Tags</h4>
+            <div class="blog-tags d-inline-flex">
+              <h4 class="title">Tags:</h4>
               <span>Safty, Learning</span>
             </div>
           </div>
           <!-- comments -->
           <div class="blog-comments">
-            <h3>2 Comments</h3>
-            <div class="comment-item">
+            <h3 class="title">2 Comments</h3>
+            <div class="comment-item d-flex">
               <img src="./assets/images/user1.png" alt="img user" />
-              <div class="name">David Shon</div>
-              <p>
-                Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam
-                nec eros id magna hendrerit sagittis. Nullam sed mi non odio
-                feugiat volutpat sit amet nec elit.
-              </p>
-              <button>Reply</button>
+              <div class="information">
+                <div class="name title">David Shon</div>
+                <p class="text-content">
+                  Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam
+                  nec eros id magna hendrerit sagittis. Nullam sed mi non odio
+                  feugiat volutpat sit amet nec elit.
+                </p>
+                <button class="button-animate button-primary">
+                  <span>Reply</span>
+                </button>
+              </div>
             </div>
-            <div class="comment-item">
+            <div class="comment-item d-flex">
               <img src="./assets/images/user2.png" alt="img user" />
-              <div class="name">Jhon Watchson</div>
-              <p>
-                Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam
-                nec eros id magna hendrerit sagittis. Nullam sed mi non odio
-                feugiat volutpat sit amet nec elit.
-              </p>
-              <button>Reply</button>
+              <div class="information">
+                <div class="name title">Jhon Watchson</div>
+                <p class="text-content">
+                  Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam
+                  nec eros id magna hendrerit sagittis. Nullam sed mi non odio
+                  feugiat volutpat sit amet nec elit.
+                </p>
+                <button class="button-animate button-primary">
+                  <span>Reply</span>
+                </button>
+              </div>
             </div>
           </div>
           <!-- leave comment -->
-          <form class="leaveComment">
-            <h3>Leave a Comment</h3>
-            <div>
-              <input type="text" placeholder="Your Name" />
-              <input type="email" placeholder="Email Address" />
+          <form class="leaveAComment">
+            <h3 class="title">Leave a Comment</h3>
+            <div class="wrap-input">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Email Address" required />
+              <textarea
+                name="content"
+                placeholder="Write a Message"
+                required
+              ></textarea>
             </div>
-            <textarea name="content" placeholder="Write a Message"></textarea>
-            <button class="button-primary">Leave a Comment</button>
+            <button type="submit" class="button-primary-2 button-animate-2">
+              <span> Leave a Comment</span>
+            </button>
           </form>
         </article>
-        <section class="blog-right">
+        <section class="blog-right d-flex flex-column">
           <div class="search">
-            <div class="search-input">
+            <div
+              class="search-input d-flex justify-content-between align-items-center"
+            >
               <span class="icon-search"></span>
-              <input type="email" />
+              <input type="email" placeholder="Type here" />
             </div>
           </div>
           <!-- latest post  -->
-          <div class="latest-post">
-            <h4>Latest Post</h4>
-            <ul class="list-post">
+          <div class="latest-post blog-right--boxshadow">
+            <h4 class="blog-right--title">Latest Post</h4>
+            <ul
+              class="list-post m-0 d-flex flex-column justify-content-between"
+            >
               <li>
-                <a href="#">
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex justify-content-between align-items-center"
+                >
                   <img
                     src="./assets/images/latestPost1.png"
                     alt="img latest post"
                   />
-                  <div>
+                  <div class="wrap-content">
                     <div>
-                      <span class="icon-watch_later"></span>
-                      <span>26 Mar, 2023</span>
+                      <span class="icon-access_time color-primary"></span>
+                      <span class="d-inline">26 Mar, 2023</span>
                     </div>
                     <h5>The Complete Web Developer Guideline</h5>
                   </div>
                 </a>
               </li>
+
               <li>
-                <a href="#">
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex justify-content-between align-items-center"
+                >
                   <img
                     src="./assets/images/latestPost2.png"
                     alt="img latest post"
                   />
-                  <div>
+                  <div class="wrap-content">
                     <div>
-                      <span class="icon-watch_later"></span>
-                      <span>26 Mar, 2023</span>
+                      <span class="icon-access_time color-primary"></span>
+                      <span class="d-inline">26 Mar, 2023</span>
                     </div>
                     <h5>The Complete Web Developer Guideline</h5>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex justify-content-between align-items-center"
+                >
                   <img
                     src="./assets/images/latestPost3.png"
                     alt="img latest post"
                   />
-                  <div>
+                  <div class="wrap-content">
                     <div>
-                      <span class="icon-watch_later"></span>
-                      <span>26 Mar, 2023</span>
+                      <span class="icon-access_time color-primary"></span>
+                      <span class="d-inline">26 Mar, 2023</span>
                     </div>
                     <h5>The Complete Web Developer Guideline</h5>
                   </div>
@@ -298,76 +328,84 @@
             </ul>
           </div>
           <!-- categories -->
-          <div class="categories">
-            <h4>Categories</h4>
-            <ul>
+          <div class="categories blog-right--boxshadow">
+            <h4 class="blog-right--title">Categories</h4>
+            <ul class="d-flex flex-column">
               <li>
-                <a href="#"
-                  ><span class="icon-chevrons-right"></span>
+                <a href="#" class="text-decoration-none d-flex align-items-center " 
+                  ><span class="icon-chevrons-right color-primary"></span>
                   <p>Web Development</p>
                 </a>
               </li>
               <li>
-                <a href="#"
-                  ><span class="icon-chevrons-right"></span>
+                <a href="#" class="text-decoration-none d-flex align-items-center " 
+                  ><span class="icon-chevrons-right color-primary"></span>
                   <p>Social Marketing</p>
                 </a>
               </li>
               <li>
-                <a href="#"
-                  ><span class="icon-chevrons-right"></span>
+                <a href="#" class="text-decoration-none d-flex align-items-center " 
+                  ><span class="icon-chevrons-right color-primary"></span>
                   <p>Technology</p>
                 </a>
               </li>
               <li>
-                <a href="#"
-                  ><span class="icon-chevrons-right"></span>
+                <a href="#" class="text-decoration-none d-flex align-items-center " 
+                  ><span class="icon-chevrons-right color-primary"></span>
                   <p>Business & Finance</p>
                 </a>
               </li>
               <li>
-                <a href="#"
-                  ><span class="icon-chevrons-right"></span>
+                <a href="#" class="text-decoration-none d-flex align-items-center " 
+                  ><span class="icon-chevrons-right color-primary"></span>
                   <p>Digital Solution</p>
                 </a>
               </li>
             </ul>
           </div>
           <!-- Tags -->
-          <div class="tags">
-            <h4>Tags</h4>
+          <div class="tags blog-right--boxshadow">
+            <h4 class="blog-right--title">Tags</h4>
             <div>
-              <button class="button-primary2">Marketing</button>
-              <button class="button-primary2">Development</button>
-              <button class="button-primary2">Digital</button>
-              <button class="button-primary2">Design</button>
+              <button class="button-animate button-primary">
+                <span>Marketing</span>
+              </button>
+              <button class="button-animate button-primary">
+                <span>Development</span>
+              </button>
+              <button class="button-animate button-primary">
+                <span>Digital</span>
+              </button>
+              <button class="button-animate button-primary">
+                <span>Design</span>
+              </button>
             </div>
           </div>
           <!-- comments -->
-          <div>
-            <h4>Comments</h4>
-            <ul>
+          <div class="comments blog-right--boxshadow">
+            <h4 class="blog-right--title">Comments</h4>
+            <ul class="p-0 m-0">
               <li>
-                <a href="#">
-                  <span class="icon-commenting-o"></span>
+                <a href="#" class="d-inline-flex align-items-center text-decoration-none">
+                  <span class="icon-commenting-o color-primary"></span>
                   <p>There are many variations of Lorem available Here</p>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <span class="icon-commenting-o"></span>
+                <a href="#" class="d-inline-flex align-items-center text-decoration-none">
+                  <span class="icon-commenting-o color-primary"></span>
                   <p>There are many variations of Lorem available Here</p>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <span class="icon-commenting-o"></span>
+                <a href="#" class="d-inline-flex align-items-center text-decoration-none">
+                  <span class="icon-commenting-o color-primary"></span>
                   <p>There are many variations of Lorem available Here</p>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <span class="icon-commenting-o"></span>
+                <a href="#" class="d-inline-flex align-items-center text-decoration-none">
+                  <span class="icon-commenting-o color-primary"></span>
                   <p>There are many variations of Lorem available Here</p>
                 </a>
               </li>
@@ -480,7 +518,7 @@
             <form class="footer-sendMail" style="--time: 1.6s">
               <h4>newsletter</h4>
               <input type="email" placeholder="Email Address" required />
-              <button type="submit" class="button-primary button-animate2">
+              <button type="submit" class="button-primary-2 button-animate-2">
                 <span> Subscribe </span>
               </button>
             </form>

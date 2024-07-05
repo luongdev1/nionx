@@ -25,17 +25,29 @@
 }
 /* button */
 .button-primary {
+  position: relative;
+  color: var(--color-title);
+  background-color: var(--color-softPurple);
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+}
+.button-primary-2 {
+  position: relative;
   color: var(--color-white);
-  padding: 10px 40px 10px 40px;
   background-color: var(--color-primary);
+  padding: 10px 40px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 20px;
-}
-.button-primary2 {
+  border: .5px solid var(--color-primary);
+  overflow: hidden;
 }
 .button-animate,
-.button-animate2 {
+.button-animate-2 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -46,22 +58,36 @@
   background-color: var(--color-primary);
   color: var(--color-white);
 }
-.button-animate2::after {
+.button-animate-2::after {
   background-color: var(--color-white);
   color: var(--color-title);
 }
+.button-animate::after {
+  border-radius: 10px;
+}
+.button-animate-2::after {
+  border-radius: 20px;
+}
 .button-animate::after,
-.button-animate2::after {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
+.button-animate-2::after {
+  content: " ";
   width: 0%;
   height: 100%;
-  transition: all 0.3s ease-in-out;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+.button-animate:hover .button-animate {
+  border: 1px solid var(--color-primary);
+  margin: -1px;
+}
+.button-animate-2:hover .button-animate-2 {
+  border: 1px solid var(--color-white);
+  margin: -1px;
 }
 .button-animate:hover:after,
-.button-animate2:hover:after {
+.button-animate-2:hover:after {
+  right: auto;
   left: 0;
   width: 100%;
 }
@@ -69,12 +95,12 @@
 .button-animate:hover span {
   color: var(--color-white);
 }
-.button-animate2:hover span {
+.button-animate-2:hover span {
   color: var(--color-title);
 }
 
 .button-animate:hover span,
-.button-animate2:hover span {
+.button-animate-2:hover span {
   z-index: 20;
   transition: all 0.1s ease-in-out;
   font-weight: 600;
