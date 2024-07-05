@@ -552,10 +552,12 @@ input[type="color"],
   max-width: 228px;
   width: 100%;
   padding: 0 50px;
+  gap: 23.83px;
 }
 .header-social .header-social--icon {
   text-decoration: none;
   color: var(--color-title);
+  font-size: 15px;
 }
 .header-social .header-social--icon:hover span {
   color: var(--color-primary);
@@ -599,18 +601,14 @@ input[type="color"],
   height: fit-content;
   margin-right: 60px;
 }
-/* .header-heading .button-contact:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-} */
 /* hotline */
 .header-heading .hotline {
   background-color: var(--color-primary);
   max-width: 419px;
   width: 100%;
   height: 100%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   padding: 0 50px;
 }
 
@@ -619,12 +617,14 @@ input[type="color"],
   border-radius: 50%;
   width: 39px;
   height: 39px;
-  margin-left: 10px;
-  margin-right: 18px;
 }
 .header-heading .hotline .icon--phone > span {
   color: var(--color-primary);
   font-size: 20px;
+}
+.header-heading .hotline .content {
+  margin-left: -24px;
+  padding-bottom: 2px;
 }
 .header-heading .hotline .content p {
   margin-bottom: 0;
@@ -637,18 +637,18 @@ input[type="color"],
 .header-heading .hotline .content p:last-child {
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 20px;
 }
 .header-heading .hotline .icon--searchAndProfile {
   padding: 10px 0;
   gap: 20px;
-  padding-left: 29px;
+  padding-left: 25px;
   border-left: 1px;
   border-color: var(--color-softPurple);
   border-style: solid;
 }
 .header-heading .hotline .icon--searchAndProfile span {
-  font-size: 24px;
+  font-size: 23px;
 }
 /* slider */
 .slider {
@@ -869,6 +869,11 @@ button {
 .footer-information .information-contact li a span:first-child {
   color: var(--color-primary);
 }
+/* send mail */
+.footer-sendMail {
+  flex-grow: 1;
+  max-width: 370px;
+}
 .footer-information ul,
 .footer-sendMail {
   animation: showItemDownToUp var(--time) ease-in-out;
@@ -883,6 +888,9 @@ button {
   color: var(--color-title);
   font-style: normal;
   font-size: 14px;
+
+  width: 100%;
+  height: 60px;
 }
 
 .footer .copyright {
