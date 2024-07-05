@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap 5.0.2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="assets/stylesheets/calcular.css" />
+  </head>
+  <body>
+    <form id = "formCal" class="container-calculator">
+      <div class="position-relative">
+        <h1 class="title">mulch calculator</h1>
+        <div class="mulch d-flex gap-2">
+          <h3>mulch Area:</h3>
+          <span>Circle</span>
+        </div>
+        <div class="d-flex gap-2 mb-2">
+          <h3>diameter =</h3>
+          <input type="text" name="inputDiameter" required/>
+          <select name="diameter" name="diameter" value="in" >
+            <option value="in">in</option>
+            <option value="ft">ft</option>
+            <option value="cm">cm</option>
+            <option value="m">m</option>
+          </select>
+        </div>
+        <div class="d-flex gap-2">
+          <h3>Depth =</h3>
+          <input type="text" name="inputDelpth" required/>
+          <select name="depth" name="depth" value="in">
+            <option value="in">in</option>
+            <option value="ft">ft</option>
+            <option value="yd">yd</option>
+            <option value="cm">cm</option>
+            <option value="m">m</option>
+          </select>
+        </div>
+        <!-- optional -->
+        <div class="optional">
+          <span>optional</span>
+          <div class="d-flex align-items-center gap-2">
+            <h3>pricing in:</h3>
+            <input type="radio" name="priciIn" id="bulk" value="bulk" checked/>
+            <label for="bulk">bulk</label><br />
+            <input type="radio" name="priciIn" id="bags" value="bags" />
+            <label for="bags">bags</label><br />
+          </div>
+          <div class="d-flex gap-2 align-items-center">
+            <h6 class="mt-4">$</h6>
+            <div>
+              <span class="d-block text-center">price</span>
+              <input type="text" name="price"/>
+            </div>
+            <div>
+              <span class="d-block text-center">per</span>
+              <select  id="per" name="per" value="cubic foot">
+                <option value="cubic foot">cubic foot</option>
+                <option value="cubic yard">cubic yard</option>
+                <option value="cubic meter">cubic meter</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- button -->
+        <div
+          class="wrap-button d-flex justify-content-between align-items-center"
+        >
+          <button type="reset">clear</button>
+          <button type="submit">calculate</button>
+        </div>
+        <!-- answer -->
+        <div class="answer">
+          <h4 class="fw-light">Answer</h4>
+          <div class="d-flex align-items-center gap-2">
+            <h3>cubic yards =</h3>
+            <span id="curbicYards">0</span>
+            <div>yds <sup>3</sup></div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <h3 id="curbicYards">cubic feet =</h3>
+            <span>0</span>
+            <span>ft <sup>3</sup></span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <h3>cubic meters = </h3>
+            <span>0</span>
+            <span>m <sup>3</sup></span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <h3>cost =</h3>
+            <span>$</span>
+            <span>0</span>
+          </div>
+          <span>$12.00 per cubic foot</span>
+        </div>
+      </div>
+    </form>
+    <!-- script -->
+    <script src="assets/javascripts/controlCalcular.js"></script>
+  </body>
+</html>
