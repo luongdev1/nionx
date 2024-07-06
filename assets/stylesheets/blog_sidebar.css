@@ -2,6 +2,9 @@
 .blog-container {
   gap: 30px;
 }
+.blog-container .wrap-content {
+  gap: 50px;
+}
 .blog-container .blog-content {
   max-width: 770px;
   width: 100%;
@@ -36,90 +39,28 @@
   font-weight: 500;
   font-size: 16px;
 }
-.blog-content .authorAndQtComment span:last-child {
+.blog-content .author {
+  padding-right: 14px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: var(--color-border);
+}
+.blog-content .qtComment {
+  padding-left: 14px;
+}
+.blog-content .author span:last-child,
+.blog-content .qtComment span:last-child {
   font-weight: 500;
   font-size: 14px;
 }
 .blog-title {
-  margin-top: 20px;
+  margin-top: 29px;
 }
-.blog-button {
-  margin: 50px 0px;
-  padding: 30px 0;
-  border-top: 1px;
-  border-bottom: 1px;
-  border-style: solid;
-  border-color: var(--color-softPurple);
-}
-.blog-button h4 {
-  font-size: 20px;
-}
-.blog-button--wrap,
-.blog-tags {
-  gap: 10px;
-}
-.blog-tags span {
+.blog-content .button-readmore {
   font-weight: 600;
-  color: var(--color-text-comment);
-}
-/* comments */
-.blog-comments h3 {
-  padding-bottom: 39px;
-}
-.blog-comments .comment-item {
-  gap: 30px;
-  flex-wrap: wrap;
-  padding-bottom: 50px;
-  border-bottom: 1px;
-  border-style: solid;
-  border-color: var(--color-softPurple);
-}
-.blog-comments .comment-item {
-  margin-bottom: 50px;
-}
-.blog-comments .comment-item .information {
-  max-width: 570px;
-  width: 100%;
-}
-.blog-comments .comment-item .name {
-  font-size: 24px;
-}
-
-.blog-comments .comment-item img {
-  border-radius: 50%;
-}
-/* leave a comment */
-.leaveAComment h3 {
-  padding-bottom: 40px;
-}
-.leaveAComment .wrap-input {
-  display: grid;
-  width: 100%;
-  height: fit-content;
-  gap: 20px;
-  grid-template-areas:
-    "input1 input2"
-    "textarea textarea";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  padding-bottom: 20px;
-}
-.leaveAComment .wrap-input input:nth-child(1) {
-  grid-area: input1;
-}
-.leaveAComment .wrap-input input:nth-child(2) {
-  grid-area: input2;
-}
-
-.leaveAComment .wrap-input textarea {
-  grid-area: textarea;
-}
-.leaveAComment .wrap-input input,
-.leaveAComment .wrap-input textarea {
-  border-radius: 20px;
-  background-color: var(--color-softPurple);
-  font-weight: 500;
-  font-style: normal;
+  padding: 14px 40px;
+  width: fit-content;
+  text-decoration: none;
 }
 /* blog right */
 .blog-right--title {

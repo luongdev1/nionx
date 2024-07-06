@@ -14,23 +14,8 @@
   * Reset
   * Repeatable Patterns    
   *	Header 
-  *	Page Title
-  * Blog
-  * Blog v.1
-  * Blog Single  
-  * Widgets  
-  * widget search
-  * widget latest posts
-  * widget tag
-  * flat-socials 
-  * Switcher
-  * GoTop Button
-  * Footer
-  * Footer widget  
-  * Bottom
-  * Parallax
-  * Boxed
-  * Revolution Slider  
+  *	content
+  * footer 
 */
 /* Root 
 --------------------------------------------------- */
@@ -703,6 +688,7 @@ button {
 .blog-item .blog-item--content {
   border-radius: 40px;
   border: 1px solid var(--color-softPurple);
+  color: var(--color-title);
 }
 .blog-item .blog-item--content {
   position: absolute;
@@ -757,7 +743,7 @@ button {
   margin: 0;
 }
 
-.blog-item .blog-item--content a {
+.blog-item .blog-item--content .content-readMore {
   width: 100%;
   transform: translateY(-31px);
   color: black;
@@ -768,7 +754,7 @@ button {
   text-decoration: none;
   font-weight: 600;
 }
-.blog-item .blog-item--content a span:last-child {
+.blog-item .blog-item--content .content-readMore span:last-child {
   color: var(--color-primary);
 }
 /* hover */
@@ -786,7 +772,7 @@ button {
 .blog-item .blog-item--content:hover,
 .blog-item .blog-item--content:hover .content-comment span:first-child,
 .blog-item .blog-item--content:hover .content-comment span:last-child,
-.blog-item .blog-item--content:hover a span {
+.blog-item .blog-item--content:hover .content-readMore span {
   color: var(--color-white);
   transition: 0.4s linear all;
 }
@@ -869,7 +855,7 @@ button {
   flex-grow: 1;
   max-width: 370px;
 }
- 
+
 .footer-sendMail input[type="email"] {
   border: none;
   background-color: var(--color-white);

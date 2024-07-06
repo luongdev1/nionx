@@ -1,3 +1,20 @@
+/* show and aniamte */
+.showItemDownToUp,
+.showItemLeftToRight,
+.showItemRightToLeft {
+  animation-fill-mode: forwards;
+  visibility: visible;
+}
+.showItemDownToUp {
+  animation-name: showItemDownToUp;
+}
+.showItemLeftToRight {
+  animation-name: showItemLeftToRight;
+}
+.showItemRightToLeft {
+  animation-name: showItemRightToLeft;
+}
+
 @keyframes showItemDownToUp {
   from {
     opacity: 0;
@@ -30,6 +47,3 @@
     transform: translateX(0);
   }
 }
-
-
-

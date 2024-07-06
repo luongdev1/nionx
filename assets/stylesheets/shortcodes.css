@@ -117,26 +117,7 @@
   line-height: 30px;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-/* other */
+/* hidden */
 .hidden {
   visibility: hidden;
-}
-/* show and aniamte */
-.showItemDownToUp {
-  animation-name: showItemDownToUp;
-  animation-duration: var(--time);
-  animation-fill-mode: forwards;
-  visibility: visible;
-}
-.showItemLeftToRight {
-  animation-name: showItemLeftToRight;
-  animation-duration: var(--time);
-  animation-fill-mode: forwards;
-  visibility: visible;
-}
-.showItemRightToLeft {
-  animation-name: showItemRightToLeft;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  visibility: visible;
 }
