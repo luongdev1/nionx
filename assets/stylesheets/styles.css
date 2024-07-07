@@ -665,20 +665,14 @@ button {
   border: none;
 }
 /* blog content */
-.blog {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 519px);
-  gap: 30px;
+.container-pc .blog .col {
+  padding: 15px;
 }
 .blog-item {
   position: relative;
   overflow: hidden;
+  height: 520px;
 }
-
-/* .blog-item {
-  animation: showItemDownToUp var(--time) linear forwards;
-} */
 
 .blog-item img {
   width: 100%;
