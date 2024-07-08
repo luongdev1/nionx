@@ -1,4 +1,15 @@
-/* show and aniamte */
+/**
+  * Name: Nionx
+  * Version: 1.0
+  * Author: Nguyen Thanh Luong
+*/
+/*
+  * Class animate
+  * Key Frames
+*/
+
+/* Class animate
+-------------------------------------------------------------- */
 .showItemDownToUp,
 .showItemLeftToRight,
 .showItemRightToLeft {
@@ -15,6 +26,8 @@
   animation-name: showItemRightToLeft;
 }
 
+/* Key frames
+-------------------------------------------------------------- */
 @keyframes showItemDownToUp {
   from {
     opacity: 0;

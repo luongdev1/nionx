@@ -1,7 +1,17 @@
 /**
   * Name: Nionx
   * Version: 1.0
-  * Author: Luong
+  * Author: Nguyen Thanh Luong
+*/
+/*
+  * Import
+  * Root
+  * Reset
+  * Repeatable Patterns    
+  *	Header 
+  *	Slider
+  *	Content
+  * Footer 
 */
 
 /* import */
@@ -9,14 +19,7 @@
 @import url(shortcodes.css);
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-/**
-  * root
-  * Reset
-  * Repeatable Patterns    
-  *	Header 
-  *	content
-  * footer 
-*/
+
 /* Root 
 --------------------------------------------------- */
 :root {
@@ -507,7 +510,8 @@ input[type="color"],
   margin-bottom: 25px;
 }
 
-/* Header */
+/* Header 
+-------------------------------------------------------------- */
 .header {
   width: 100%;
 }
@@ -635,7 +639,8 @@ input[type="color"],
 .header-heading .hotline .icon--searchAndProfile span {
   font-size: 23px;
 }
-/* slider */
+/* Slider 
+-------------------------------------------------------------- */
 .slider {
   position: relative;
   width: 100%;
@@ -664,7 +669,9 @@ button {
 .slider-content button:hover {
   border: none;
 }
-/* blog content */
+
+/* Content
+-------------------------------------------------------------- */
 .container-pc .blog .col {
   padding: 15px;
 }
@@ -804,7 +811,8 @@ button {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
-/* footer box */
+/* Footer
+-------------------------------------------------------------- */
 .footer {
   position: relative;
   margin-top: 158px;

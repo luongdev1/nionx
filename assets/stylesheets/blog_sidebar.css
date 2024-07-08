@@ -1,4 +1,15 @@
-/* blog content */
+/**
+  * Name: Nionx
+  * Version: 1.0
+  * Author: Nguyen Thanh Luong
+*/
+/*
+  * Content
+  * Sidebar 
+*/
+
+/* Content 
+--------------------------------------------------- */
 .blog-container {
   gap: 30px;
 }
@@ -62,8 +73,9 @@
   width: fit-content;
   text-decoration: none;
 }
-/* blog right */
-.blog-right--title {
+/* Sidebar 
+--------------------------------------------------- */
+.sidebar--title {
   font-weight: 700;
   line-height: 26px;
   font-size: 24px;
@@ -72,43 +84,43 @@
   border-color: var(--color-primary);
   border-style: solid;
 }
-.blog-right--boxshadow {
+.sidebar--boxshadow {
   padding: 40px;
   box-shadow: 0px 0px 60px 0px rgba(2, 2, 2, 0.07);
 }
-.blog-right {
+.sidebar {
   gap: 30px;
 }
-.blog-right .search {
+.sidebar .search {
   padding: 30px;
   background-color: var(--color-softPurple);
   border-radius: 6px;
 }
-.blog-right .search .search-input {
+.sidebar .search .search-input {
   padding: 20px;
   border-radius: 6px;
   background-color: var(--color-white);
 }
-.blog-right .search .search-input input {
+.sidebar .search .search-input input {
   border: none;
   outline: none;
   padding: 0;
   font-style: normal;
   height: fit-content;
 }
-.blog-right .search .search-input span {
+.sidebar .search .search-input span {
   font-size: 30px;
   color: var(--color-text-comment);
 }
-.blog-right .latest-post .list-post {
+.sidebar .latest-post .list-post {
   padding-top: 30px;
   padding-left: 0;
 }
-.blog-right .latest-post ul {
+.sidebar .latest-post ul {
   gap: 16px;
 }
 .latest-post .list-post li,
-.blog-right .categories li {
+.sidebar .categories li {
   padding-bottom: 20px;
   border-bottom: 1px;
   border-style: solid;
@@ -119,7 +131,7 @@
   transition: all 0.3 ease;
 }
 .latest-post .list-post li:last-child,
-.blog-right .categories li:last-child {
+.sidebar .categories li:last-child {
   border: none;
 }
 .latest-post .list-post .wrap-content {
@@ -135,38 +147,38 @@
   line-height: 20px;
 }
 /* categries */
-.blog-right .categories li p {
+.sidebar .categories li p {
   margin-bottom: 0;
   padding-left: 8px;
   color: var(--color-text-comment);
   font-weight: 500;
 }
-.blog-right .categories li:hover p {
+.sidebar .categories li:hover p {
   color: var(--color-title);
 }
-.blog-right .categories ul {
+.sidebar .categories ul {
   gap: 16px;
   margin-bottom: 0;
   padding: 30px 0 0 0;
 }
 /* tags */
-.blog-right .tags div {
+.sidebar .tags div {
   padding-top: 30px;
 }
-.blog-right .tags button {
+.sidebar .tags button {
   display: inline-flex;
   margin: 0 8px 8px 0;
 }
-.blog-right .comments ul li {
+.sidebar .comments ul li {
   padding-bottom: 34px;
 }
-.blog-right .comments ul li:last-child {
+.sidebar .comments ul li:last-child {
   padding-bottom: 0;
 }
-.blog-right .comments a {
+.sidebar .comments a {
   gap: 14px;
 }
-.blog-right .comments span {
+.sidebar .comments span {
   display: block;
   padding: 10px;
   border-radius: 50%;
@@ -174,11 +186,11 @@
   font-size: 21px;
   transition: all 0.3s ease-in-out;
 }
-.blog-right .comments ul li:hover span {
+.sidebar .comments ul li:hover span {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
-.blog-right .comments p {
+.sidebar .comments p {
   margin-bottom: 0;
   padding-left: 8px;
   font-weight: 500;
