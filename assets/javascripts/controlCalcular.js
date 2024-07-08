@@ -19,8 +19,7 @@ function handleCubicYards(diameter, depth, unitDiameter, unitDepth) {
      const dosau = convertToYards(depth, unitDepth)
      const dientich = Math.PI * Math.pow((duongkinh / 2), 2)
      const thetich = dosau * dientich
-     const thetichYd3 = thetich / 27
-     return thetichYd3
+     return thetich
 }
 
 
@@ -33,8 +32,13 @@ document.getElementById('formCal').addEventListener('submit', function (event) {
      });
 
      const cubicYards = handleCubicYards(formObject.inputDiameter, formObject.inputDelpth, formObject.diameter, formObject.depth)
-
+     const cubicFeet = cubicYards * 27
+     const cubicMetter = cubicYards * 0.764555
      // render html
      const textCubicYards = document.getElementById('curbicYards');
+     const textCubicFeet = document.getElementById('curbicFeet');
+     const textCubicMetter = document.getElementById('curbicMetter');
      textCubicYards.textContent = cubicYards.toFixed(2);
+     textCubicFeet.textContent = cubicFeet.toFixed(2);
+     textCubicMetter.textContent = cubicMetter.toFixed(2);
 })
