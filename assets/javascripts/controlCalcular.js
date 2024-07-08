@@ -80,7 +80,6 @@ let qtBags
 document.addEventListener('DOMContentLoaded', function () {
      const perDiv = document.getElementById('wrap-per');
      const sizeOfBagsDiv = document.getElementById('wrap-sizeOfBags');
-
      function togglePerDiv() {
           if (bulkRadio.checked) {
                perDiv.classList.remove('hidden');

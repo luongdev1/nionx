@@ -8,6 +8,21 @@
   margin: 0;
   box-sizing: border-box;
   text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+}
+body {
+  background-color: #333;
+}
+input,
+select {
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #333;
+}
+select {
+  cursor: pointer;
 }
 /* main */
 .container-calculator {
@@ -15,8 +30,13 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  border: 1px solid gray;
+  border: 1px solid rgb(219, 216, 216);
   background-color: rgb(251, 250, 250);
+  margin-top: 50px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 1px rgb(219, 216, 216);
+  padding: 10px;
+  padding-top: 0;
 }
 
 .title {
@@ -30,9 +50,7 @@
 .mulch {
   gap: 20px;
 }
-.mulch span {
-  font-weight: 700;
-  font-size: 16px;
+.mulch h4 {
   color: red;
 }
 /* optional */

@@ -18,13 +18,18 @@
     <form id="formCal" class="container-calculator">
       <div class="position-relative">
         <h1 class="title">mulch calculator</h1>
-        <div class="mulch d-flex gap-2">
+        <div class="mulch d-flex align-items-center gap-2">
           <h3>mulch Area:</h3>
-          <span>Circle</span>
+          <h4>Circle</h4>
         </div>
         <div class="d-flex gap-2 mb-2">
           <h3>diameter =</h3>
-          <input type="text" name="inputDiameter" required />
+          <input
+            type="text"
+            name="inputDiameter"
+            placeholder="enter diameter"
+            required
+          />
           <select name="diameter" name="diameter" value="in">
             <option value="in">in</option>
             <option value="ft">ft</option>
@@ -34,7 +39,12 @@
         </div>
         <div class="d-flex gap-2">
           <h3>Depth =</h3>
-          <input type="text" name="inputDelpth" required />
+          <input
+            type="text"
+            name="inputDelpth"
+            placeholder="enter depth"
+            required
+          />
           <select name="depth" name="depth" value="in">
             <option value="in">in</option>
             <option value="ft">ft</option>
@@ -63,7 +73,7 @@
             <h6 class="mt-4">$</h6>
             <div>
               <span class="d-block text-center">price</span>
-              <input type="text" name="price" />
+              <input type="text" name="price" placeholder="enter price"/>
             </div>
             <div id="wrap-per">
               <span class="d-block text-center">per</span>
@@ -95,7 +105,7 @@
         </div>
         <!-- answer -->
         <div class="answer">
-          <h4 class="fw-light">Answer</h4>
+          <h6 class="fw-light">Answer</h6>
           <div class="d-flex align-items-center gap-2">
             <h3>cubic yards =</h3>
             <span id="curbicYards">0</span>
