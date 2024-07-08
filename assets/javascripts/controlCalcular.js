@@ -58,7 +58,6 @@ function handleCubicYards(diameter, depth, unitDiameter, unitDepth) {
      const thetich = dosau * dientich
      return thetich
 }
-
 // query
 const textCubicYards = document.getElementById('curbicYards');
 const textCubicFeet = document.getElementById('curbicFeet');
@@ -78,7 +77,6 @@ let cubicMetter
 let cost
 let formatCost
 let qtBags
-// hide option
 document.addEventListener('DOMContentLoaded', function () {
      const perDiv = document.getElementById('wrap-per');
      const sizeOfBagsDiv = document.getElementById('wrap-sizeOfBags');
@@ -94,9 +92,6 @@ document.addEventListener('DOMContentLoaded', function () {
                sizeOfBagsDiv.classList.remove('hidden');
           }
      }
-
-
-
      bulkRadio.addEventListener('change', togglePerDiv);
      bagsRadio.addEventListener('change', togglePerDiv);
 
