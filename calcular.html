@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/stylesheets/calcular.css" />
   </head>
   <body>
-    <form id = "formCal" class="container-calculator">
+    <form id="formCal" class="container-calculator">
       <div class="position-relative">
         <h1 class="title">mulch calculator</h1>
         <div class="mulch d-flex gap-2">
@@ -24,8 +24,8 @@
         </div>
         <div class="d-flex gap-2 mb-2">
           <h3>diameter =</h3>
-          <input type="text" name="inputDiameter" required/>
-          <select name="diameter" name="diameter" value="in" >
+          <input type="text" name="inputDiameter" required />
+          <select name="diameter" name="diameter" value="in">
             <option value="in">in</option>
             <option value="ft">ft</option>
             <option value="cm">cm</option>
@@ -34,7 +34,7 @@
         </div>
         <div class="d-flex gap-2">
           <h3>Depth =</h3>
-          <input type="text" name="inputDelpth" required/>
+          <input type="text" name="inputDelpth" required />
           <select name="depth" name="depth" value="in">
             <option value="in">in</option>
             <option value="ft">ft</option>
@@ -48,7 +48,13 @@
           <span>optional</span>
           <div class="d-flex align-items-center gap-2">
             <h3>pricing in:</h3>
-            <input type="radio" name="priciIn" id="bulk" value="bulk" checked/>
+            <input
+              type="radio"
+              name="priciIn"
+              id="bulk"
+              value="bulk"
+              checked="checked"
+            />
             <label for="bulk">bulk</label><br />
             <input type="radio" name="priciIn" id="bags" value="bags" />
             <label for="bags">bags</label><br />
@@ -57,14 +63,24 @@
             <h6 class="mt-4">$</h6>
             <div>
               <span class="d-block text-center">price</span>
-              <input type="text" name="price"/>
+              <input type="text" name="price" />
             </div>
-            <div>
+            <div id="wrap-per">
               <span class="d-block text-center">per</span>
-              <select  id="per" name="per" value="cubic foot">
+              <select id="per" name="per">
                 <option value="cubic foot">cubic foot</option>
                 <option value="cubic yard">cubic yard</option>
                 <option value="cubic meter">cubic meter</option>
+              </select>
+            </div>
+            <div id="wrap-sizeOfBags">
+              <span class="d-block text-center">size of bag</span>
+              <select id="sizeOfBags" name="sizeOfBags">
+                <option value="1">2.0 cu ft (56.63L)</option>
+                <option value="2">1.8 cu ft (50.97L)</option>
+                <option value="3">1.5 cu ft (42.47L)</option>
+                <option value="4">1.0 cu ft (28.32L)</option>
+                <option value="5">1.0 cu yd (765L)</option>
               </select>
             </div>
           </div>
@@ -85,21 +101,20 @@
             <div>yds <sup>3</sup></div>
           </div>
           <div class="d-flex align-items-center gap-2">
-            <h3 >cubic feet =</h3>
+            <h3>cubic feet =</h3>
             <span id="curbicFeet">0</span>
             <span>ft <sup>3</sup></span>
           </div>
           <div class="d-flex align-items-center gap-2">
-            <h3>cubic meters = </h3>
+            <h3>cubic meters =</h3>
             <span id="curbicMetter">0</span>
             <span>m <sup>3</sup></span>
           </div>
           <div class="d-flex align-items-center gap-2">
             <h3>cost =</h3>
-            <span>$</span>
-            <span>0</span>
+            <span id="cost"></span>
           </div>
-          <span>$12.00 per cubic foot</span>
+          <span id="ps"></span>
         </div>
       </div>
     </form>

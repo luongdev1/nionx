@@ -1,3 +1,4 @@
+// convert to yards
 function convertToYards(value, unit) {
      switch (unit) {
           case 'in':
@@ -14,6 +15,25 @@ function convertToYards(value, unit) {
                throw new Error('don vi khong duoc ho tro');
      }
 }
+// format currency
+function formatCurrency(number) {
+     return number.toLocaleString('en-US', {
+          style: 'currency',
+          currency: 'USD',
+     });
+};
+// radio bulk
+function handleCostBulk(valueYard, valueFeet, valueMeter, typeSlect, price) {
+     switch (typeSlect) {
+          case 'cubic foot':
+               return valueFeet * price;
+          case 'cubic yard':
+               return valueYard * price;;
+          case 'cubic meter':
+               return valueMeter * price;;
+     }
+}
+
 function handleCubicYards(diameter, depth, unitDiameter, unitDepth) {
      const duongkinh = convertToYards(diameter, unitDiameter)
      const dosau = convertToYards(depth, unitDepth)
@@ -22,23 +42,51 @@ function handleCubicYards(diameter, depth, unitDiameter, unitDepth) {
      return thetich
 }
 
+// hide option
+document.addEventListener('DOMContentLoaded', function () {
+     const bulkRadio = document.getElementById('bulk');
+     const bagsRadio = document.getElementById('bags');
+     const perDiv = document.getElementById('wrap-per');
+     const sizeOfBagsDiv = document.getElementById('wrap-sizeOfBags');
+
+     function togglePerDiv() {
+          if (bulkRadio.checked) {
+               perDiv.classList.remove('hidden');
+               sizeOfBagsDiv.classList.add('hidden');
+          } else {
+               perDiv.classList.add('hidden');
+               sizeOfBagsDiv.classList.remove('hidden');
+          }
+     }
+
+     bulkRadio.addEventListener('change', togglePerDiv);
+     bagsRadio.addEventListener('change', togglePerDiv);
+
+     // Initialize the state on page load
+     togglePerDiv();
+});
 
 document.getElementById('formCal').addEventListener('submit', function (event) {
      event.preventDefault();
+     const textCubicYards = document.getElementById('curbicYards');
+     const textCubicFeet = document.getElementById('curbicFeet');
+     const textCubicMetter = document.getElementById('curbicMetter');
+     const textCost = document.getElementById('cost');
+     const textPs = document.getElementById('ps');
      var formData = new FormData(this);
      var formObject = {};
      formData.forEach((value, key) => {
           formObject[key] = value;
      });
-
      const cubicYards = handleCubicYards(formObject.inputDiameter, formObject.inputDelpth, formObject.diameter, formObject.depth)
      const cubicFeet = cubicYards * 27
      const cubicMetter = cubicYards * 0.764555
+     const cost = handleCostBulk(cubicYards, cubicFeet, cubicMetter, formObject.per, formObject.price)
+     const formatCost = formatCurrency(cost)
      // render html
-     const textCubicYards = document.getElementById('curbicYards');
-     const textCubicFeet = document.getElementById('curbicFeet');
-     const textCubicMetter = document.getElementById('curbicMetter');
      textCubicYards.textContent = cubicYards.toFixed(2);
      textCubicFeet.textContent = cubicFeet.toFixed(2);
      textCubicMetter.textContent = cubicMetter.toFixed(2);
+     textCost.textContent = formatCost;
+     textPs.textContent = "$ " + formObject.price + ' per ' + formObject.per;
 })
