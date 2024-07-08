@@ -198,3 +198,20 @@
   color: var(--color-text-comment);
   line-height: 26px;
 }
+/* pagination */
+.pagination {
+  gap: 16px;
+}
+.pagination a {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: var(--color-softPurple);
+  color: var(--color-title);
+  font-weight: 500;
+  font-size: 20px;
+}
+.pagination a:hover, .pagination a.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
