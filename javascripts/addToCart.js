@@ -1,25 +1,38 @@
 let listProduct = [{
      id: "1",
-     name: "Item 1"
+     name: "Item 1",
+     price: 200
 }, {
      id: "2",
-     name: "Item 2"
+     name: "Item 2",
+     price: 150
 }]
 let cart = []
-const addBtn = document.querySelectorAll('.addToCart')
+var addBtn = document.querySelectorAll('.addToCart')
+var minar_overlay = document.querySelector('.minar-overlay')
+var navCart = document.querySelector('.nav-shop-cart')
+// handle show and close nav cart
+function handleShowCloseNavCart() {
+     minar_overlay.classList.toggle("active-overlay")
+     navCart.classList.toggle("active-cart")
+}
 // render cart
 function renderCart() {
-     const listCart = document.querySelector('.listCart')
+     const listCart = document.querySelector('.nav-shop-cart__list')
      let html = ''
 
      cart.map((item, index) => {
-          html += `<li>
-        <div>
-          <h5>${item.name}</h5>
-          <h6>so luong: ${item.soluong}</h6>
-        </div>
-        <button onClick="removeCart(${item.id});">remove</button>
-      </li>`
+          html += `<li key="${index}" class="nav-shop-cart__item">
+              <div class="img">img</div>
+              <div class="title">${item.name}</div>
+              <div class="wrap-remove">
+                <button class="wrap-remove__btn" onclick="removeCart(${item.id})">remove</button>
+                <span class="quantity">
+                  ${item.soluong} x
+                  <span class="price">${item.price} $</span>
+                </span>
+              </div>
+            </li>`
      })
 
      listCart.innerHTML = html
@@ -43,9 +56,12 @@ function handleAddProduct() {
                if (!checkExistProductInCart) {
                     cart.push({ ...product, soluong: 1 });
                }
-               renderCart()
+               handleShowCloseNavCart()//show close nav cart
+               renderCart() //render cart
+
           })
      })
+     console.log(minar_overlay);
 }
 handleAddProduct()
 // remove cart
