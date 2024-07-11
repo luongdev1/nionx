@@ -840,6 +840,7 @@ input[type="color"],
   transform-origin: top center;
   transform: scaleY(0);
   transition: all 0.4s ease-in-out;
+  z-index: 9999;
 }
 .header-nav .header-nav__list .header-subnav:hover .subnav-content {
   opacity: 1;
