@@ -4,16 +4,44 @@
     display: inline-flex;
   }
 }
-@media screen and (min-width: 1200px) {
-   
-}
 @media screen and (min-width: 1400px) {
   .header-nav {
     display: inline-flex;
   }
+  .mobile-menu-btn__navbar {
+    display: none;
+  }
 }
+/* tablet to more pc */
 @media screen and (min-width: 1100px) {
   .topbar {
     display: flex;
+  }
+}
+/* about tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 720px;
+  }
+}
+/* mobile to more pc*/
+@media screen and (min-width: 770px) {
+  .header-right .header-right__infor {
+    display: flex;
+  }
+}
+/* about mobile */
+@media screen and (max-width: 770px) {
+  .container-fluid {
+    padding: 0 15px;
+  }
+  .header-inner {
+    padding: 20px 0;
+  }
+  .footer-social__icon {
+    float: left;
+  }
+  .container {
+    max-width: 540px;
   }
 }
