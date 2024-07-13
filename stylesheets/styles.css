@@ -1542,8 +1542,7 @@ body {
   line-height: 39.04px;
   display: block;
 }
-.wrap-content {
-}
+
 .wrap-content .meta {
   margin-bottom: 20px;
 }
@@ -1833,7 +1832,6 @@ body {
   font-style: normal;
   background: #f4f2f9;
   font-weight: 500;
-  display: inline-flex;
   padding: 10px 16px;
   border-radius: 10px;
 }
@@ -1869,4 +1867,45 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 26px;
+}
+/* Blog Sidebar
+---------------------------------------------- */
+.main-blog-sidebar {
+  padding: 120px 0;
+}
+.main-blog-sidebar .post {
+  margin-bottom: 50px;
+}
+.main-blog-sidebar .wrap-content .btn_read {
+  padding: 14px 40px 14px 40px;
+  gap: 10px;
+  border-radius: 6px;
+  background-color: var(--color-softPurple);
+  color: #000000;
+}
+.main-blog-sidebar .pagination {
+  padding-top: 30px;
+}
+.main-blog-sidebar .pagination .list_btn {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.main-blog-sidebar .pagination a,
+.main-blog-sidebar .pagination span {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: var(--color-softPurple);
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500px;
+}
+.main-blog-sidebar .pagination .list_btn .active a{
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }

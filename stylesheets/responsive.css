@@ -50,4 +50,7 @@
   .main-blog-detail {
     padding: 60px 0;
   }
+  .main-blog-sidebar .pagination {
+    padding-top: 0;
+  }
 }
