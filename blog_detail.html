@@ -187,47 +187,49 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-12 col-lg-8">
-            <div class="wrap-image">
-              <img src="./images/img3.jpg" alt="main img" />
-              <div class="date">
-                <span class="date__day">31</span>
-                July 2023
+            <article>
+              <div class="wrap-image">
+                <img src="./images/img3.jpg" alt="main img" />
+                <div class="date">
+                  <span class="date__day">31</span>
+                  July 2023
+                </div>
               </div>
-            </div>
-            <!-- /.wrap-image -->
-            <div class="wrap-content">
-              <ul class="meta">
-                <li>
-                  <a href="#">
-                    <span class="icon-user-circle-o"></span>
-                    By Admin
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="icon-bubbles2"></span>
-                    2 Comments
-                  </a>
-                </li>
-              </ul>
-              <h3 class="title">We Help You Drive Properly on the Road</h3>
-              <p class="text">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteradution in some form by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going There are many variations
-                of passages of Lorem Ipsum available, but the majority have
-                suffered alteradution in some form by injected humour, or
-                randomised words which don't look even slightly believable. If
-                you are going
-              </p>
-              <p class="text">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteradution in some form by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going
-              </p>
-            </div>
+              <!-- /.wrap-image -->
+              <div class="wrap-content">
+                <ul class="meta">
+                  <li>
+                    <a href="#">
+                      <span class="icon-user-circle-o"></span>
+                      By Admin
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon-bubbles2"></span>
+                      2 Comments
+                    </a>
+                  </li>
+                </ul>
+                <h3 class="title">We Help You Drive Properly on the Road</h3>
+                <p class="text">
+                  There are many variations of passages of Lorem Ipsum available,
+                  but the majority have suffered alteradution in some form by
+                  injected humour, or randomised words which don't look even
+                  slightly believable. If you are going There are many variations
+                  of passages of Lorem Ipsum available, but the majority have
+                  suffered alteradution in some form by injected humour, or
+                  randomised words which don't look even slightly believable. If
+                  you are going
+                </p>
+                <p class="text">
+                  There are many variations of passages of Lorem Ipsum available,
+                  but the majority have suffered alteradution in some form by
+                  injected humour, or randomised words which don't look even
+                  slightly believable. If you are going
+                </p>
+              </div>
+            </article>
             <!-- /.wrap-content -->
             <div class="details-meta">
               <div class="meta-left">
@@ -285,13 +287,13 @@
             <!-- /.comments -->
             <div class="comments-form">
               <h3 class="title">Leave a Comment</h3>
-              <form>
+              <form action="#">
                 <div class="row">
                   <div class="col-12 col-xl-6">
-                    <input type="text" placeholder="Your Name" />
+                    <input required type="text" placeholder="Your Name" />
                   </div>
                   <div class="col-12 col-xl-6">
-                    <input type="text" placeholder="Email Address" />
+                    <input required type="email" placeholder="Email Address" />
                   </div>
                   <div class="col-12 col-xl-12">
                     <textarea
@@ -316,7 +318,7 @@
                     <button type="submit">
                       <span class="icon-search"></span>
                     </button>
-                    <input type="text" placeholder="Type Here" />
+                    <input required type="text" placeholder="Type Here" />
                   </form>
                 </div>
                 <!-- /.form-search -->
@@ -332,11 +334,11 @@
                             26 Mar, 2023
                           </a>
                         </p>
-                        <h4 class="post-title">
+                        <h5 class="post-title">
                           <a href="blog_sidebar.html"
                             >The Complete Web Developer Guideline
                           </a>
-                        </h4>
+                        </h5>
                       </div>
                     </li>
                     <!-- /.list-post__item -->
@@ -349,11 +351,11 @@
                             26 Mar, 2023
                           </a>
                         </p>
-                        <h4 class="post-title">
+                        <h5 class="post-title">
                           <a href="blog_sidebar.html"
                             >The Complete Web Developer Guideline
                           </a>
-                        </h4>
+                        </h5>
                       </div>
                     </li>
                     <!-- /.list-post__item -->
@@ -366,11 +368,11 @@
                             26 Mar, 2023
                           </a>
                         </p>
-                        <h4 class="post-title">
+                        <h5 class="post-title">
                           <a href="blog_sidebar.html"
                             >The Complete Web Developer Guideline
                           </a>
-                        </h4>
+                        </h5>
                       </div>
                     </li>
                     <!-- /.list-post__item -->
@@ -584,8 +586,8 @@
             <div class="col-12 col-md-6 col-xl-4">
               <div class="footer-widget">
                 <h4 class="footer-widget__title">Newsletter</h4>
-                <form class="footer-widget__newletters">
-                  <input type="email" placeholder="Email Address" />
+                <form action="#" class="footer-widget__newletters">
+                  <input required type="email" placeholder="Email Address" />
                   <button type="submit">Subscribe</button>
                 </form>
                 <!-- /.footer-widget__links -->
