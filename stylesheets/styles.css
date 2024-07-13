@@ -1777,6 +1777,7 @@ body {
   width: 70px;
   height: 100%;
   object-fit: cover;
+  border-radius: 6px;
 }
 .wrap-latest-post .list-post__item a {
   font-weight: 500;
