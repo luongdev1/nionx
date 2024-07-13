@@ -1,11 +1,731 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-</head>
-<body>
-     
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- Bootstrap 5.0.2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+    <!-- animation -->
+    <link type="text/css" rel="stylesheet" href="stylesheets/animation.css" />
+  </head>
+  <body>
+    <div class="header-boxed">
+      <div class="topbar">
+        <div class="container-fluid">
+          <div class="topbar-inner">
+            <ul class="topbar-left">
+              <li>
+                <span class="icon-location topbar-left__icon"></span>
+                <span>30 Commercial Road Fratton, Australia </span>
+              </li>
+              <li>
+                <span class="icon-envelope topbar-left__icon"></span>
+                <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+              </li>
+            </ul>
+            <!-- /.topbar-left -->
+
+            <div class="topbar-right">
+              <p class="topbar-text">
+                <span class="icon-watch_later topbar-right__icon"></span>
+                <span>Mon to Sat: 8.00 am - 7.00 pm</span>
+              </p>
+              <ul class="topbar-social">
+                <li>
+                  <a href="#">
+                    <span class="icon-facebook"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon-twitter"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon-pinterest"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon-instagram"></span>
+                  </a>
+                </li>
+              </ul>
+              <!-- /.topbar-social -->
+            </div>
+            <!-- /.topbar-right -->
+          </div>
+          <!-- /.topbar-inner-->
+        </div>
+        <!-- /.container-fluid-->
+      </div>
+      <!-- /.Topbar -->
+      <header class="header">
+        <div class="container-fluid">
+          <div class="header-inner">
+            <div class="header-logo">
+              <a href="index.html">
+                <img src="/images/logo.png" alt="logo" />
+              </a>
+            </div>
+            <!-- /.header-logo-->
+            <nav class="header-nav">
+              <ul class="header-nav__list">
+                <li class="header-subnav current">
+                  <a href="#">Home</a>
+                </li>
+                <li class="header-subnav">
+                  <a href="#">About</a>
+                </li>
+                <li class="header-subnav">
+                  <a href="#">Service</a>
+                  <ul class="subnav-content">
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+                    <li><a href="#">Service 4</a></li>
+                    <li><a href="#">Service 5</a></li>
+                  </ul>
+                </li>
+                <li class="header-subnav">
+                  <a href="#">Pages</a>
+                  <ul class="subnav-content">
+                    <li><a href="#">Pages 1</a></li>
+                    <li><a href="#">Pages 2</a></li>
+                    <li><a href="#">Pages 3</a></li>
+                    <li><a href="#">Pages 4</a></li>
+                    <li><a href="#">Pages 5</a></li>
+                  </ul>
+                </li>
+                <li class="header-subnav">
+                  <a href="#">Shop</a>
+                </li>
+                <li class="header-subnav">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="header-subnav">
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <!--/.header-nav-->
+            <div class="header-right">
+              <a href="#" class="header-contact__btn">Contact Us</a>
+              <div class="header-right__infor">
+                <a href="#" class="infor-call">
+                  <div class="infor-call__icon">
+                    <span class="icon-phone_in_talk"></span>
+                  </div>
+                  <div class="infor-call__content">
+                    <span class="infor-call__content__text">Call Anytime</span>
+                    <h6 class="infor-call__content__call">(303) 555-0105</h6>
+                  </div> </a
+                ><!-- /.infor-call -->
+                <a href="#" class="search">
+                  <span class="icon-search"></span> </a
+                ><!-- /.search -->
+                <a href="#" class="profile">
+                  <span class="icon-user-circle-o"></span> </a
+                ><!-- /.profile -->
+              </div>
+              <!-- /.header-right__infor-->
+              <div
+                class="mobile-menu-btn__navbar"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <!--/.mobile-menu-btn__navbar-->
+            </div>
+            <!-- /.header-right -->
+          </div>
+          <!--/.header-inner-->
+        </div>
+        <!--/.container-fluid-->
+      </header>
+      <!-- /.header -->
+    </div>
+    <!-- /.header-boxed-->
+
+    <section class="page-header">
+      <div class="page-header__bg"></div>
+      <!--/.page-header__bg-->
+      <div class="page-header__container">
+        <h2 class="page-header__title">Blog Details</h2>
+        <ul class="page-header__breadcrumb">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <span>Blog</span>
+          </li>
+        </ul>
+        <!-- /.page-header__breadcrumb -->
+      </div>
+      <!-- /.page-header__container -->
+    </section>
+    <!-- /.page header -->
+
+    <section class="main-blog-detail">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-8">
+            <div class="wrap-image">
+              <img src="./images/img3.jpg" alt="main img" />
+              <div class="date">
+                <span class="date__day">31</span>
+                July 2023
+              </div>
+            </div>
+            <!-- /.wrap-image -->
+            <div class="wrap-content">
+              <ul class="meta">
+                <li>
+                  <a href="#">
+                    <span class="icon-user-circle-o"></span>
+                    By Admin
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon-bubbles2"></span>
+                    2 Comments
+                  </a>
+                </li>
+              </ul>
+              <h3 class="title">We Help You Drive Properly on the Road</h3>
+              <p class="text">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteradution in some form by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going There are many variations
+                of passages of Lorem Ipsum available, but the majority have
+                suffered alteradution in some form by injected humour, or
+                randomised words which don't look even slightly believable. If
+                you are going
+              </p>
+              <p class="text">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteradution in some form by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going
+              </p>
+            </div>
+            <!-- /.wrap-content -->
+            <div class="details-meta">
+              <div class="meta-left">
+                <h4 class="title">Post In:</h4>
+                <div class="tags">
+                  <a href="#">Search</a>
+                  <a href="#">Seo</a>
+                </div>
+              </div>
+              <!-- /.meta-left -->
+              <div class="meta-right">
+                <h4 class="title">Tags:</h4>
+                <div class="tags">
+                  <a href="#">Safty</a>
+                  <span>,</span>
+                  <a href="#">Learning</a>
+                </div>
+              </div>
+              <!-- /.meta-right -->
+            </div>
+            <!-- /.details-meta -->
+            <div class="comments">
+              <h3 class="title">2 Comments</h3>
+              <ul class="list-comment">
+                <li>
+                  <div class="comment-img">
+                    <img src="./images/user1.png" alt="avata" />
+                  </div>
+                  <div class="comment-content">
+                    <h3 class="name">David Shon</h3>
+                    <p class="text">
+                      Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh.
+                      Nam nec eros id magna hendrerit sagittis. Nullam sed mi
+                      non odio feugiat volutpat sit amet nec elit.
+                    </p>
+                    <a href="#" class="btn">Reply</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="comment-img">
+                    <img src="./images/user2.png" alt="avata" />
+                  </div>
+                  <div class="comment-content">
+                    <h3 class="name">Jhon Watchson</h3>
+                    <p class="text">
+                      Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh.
+                      Nam nec eros id magna hendrerit sagittis. Nullam sed mi
+                      non odio feugiat volutpat sit amet nec elit.
+                    </p>
+                    <a href="#" class="btn">Reply</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- /.comments -->
+            <div class="comments-form">
+              <h3 class="title">Leave a Comment</h3>
+              <form>
+                <div class="row">
+                  <div class="col-12 col-xl-6">
+                    <input type="text" placeholder="Your Name" />
+                  </div>
+                  <div class="col-12 col-xl-6">
+                    <input type="text" placeholder="Email Address" />
+                  </div>
+                  <div class="col-12 col-xl-12">
+                    <textarea
+                      name="textarea"
+                      id="textAreaFormComment"
+                      placeholder="Write a Message"
+                    ></textarea>
+                  </div>
+                  <div class="col-12 col-xl-6">
+                    <button class="btn" type="submit">Leave a Comment</button>
+                  </div>
+                </div>
+              </form>
+              <!-- /.comments-form -->
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="sidebar">
+              <div class="widget-area">
+                <div class="form-search">
+                  <form action="#">
+                    <button type="submit">
+                      <span class="icon-search"></span>
+                    </button>
+                    <input type="text" placeholder="Type Here" />
+                  </form>
+                </div>
+                <!-- /.form-search -->
+                <div class="wrap-latest-post">
+                  <h4 class="title">Latest Post</h4>
+                  <ul class="list-post">
+                    <li class="list-post__item">
+                      <img src="./images/latestPost1.png" alt="latest" />
+                      <div class="content">
+                        <p class="meta">
+                          <a href="#"
+                            ><span class="icon-watch_later"></span>
+                            26 Mar, 2023
+                          </a>
+                        </p>
+                        <h4 class="post-title">
+                          <a href="#">The Complete Web Developer Guideline </a>
+                        </h4>
+                      </div>
+                    </li>
+                    <!-- /.list-post__item -->
+                    <li class="list-post__item">
+                      <img src="./images/latestPost1.png" alt="latest" />
+                      <div class="content">
+                        <p class="meta">
+                          <a href="#"
+                            ><span class="icon-watch_later"></span>
+                            26 Mar, 2023
+                          </a>
+                        </p>
+                        <h4 class="post-title">
+                          <a href="#">The Complete Web Developer Guideline </a>
+                        </h4>
+                      </div>
+                    </li>
+                    <!-- /.list-post__item -->
+                    <li class="list-post__item">
+                      <img src="./images/latestPost1.png" alt="latest" />
+                      <div class="content">
+                        <p class="meta">
+                          <a href="#"
+                            ><span class="icon-watch_later"></span>
+                            26 Mar, 2023
+                          </a>
+                        </p>
+                        <h4 class="post-title">
+                          <a href="#">The Complete Web Developer Guideline </a>
+                        </h4>
+                      </div>
+                    </li>
+                    <!-- /.list-post__item -->
+                  </ul>
+                  <!-- /.list-post -->
+                </div>
+                <!-- /.wrap-latest-post -->
+                <div class="categories">
+                  <h4 class="title">Categories</h4>
+                  <ul class="list-categories">
+                    <li class="categories-item">
+                      <a href="#"> Web Development </a>
+                    </li>
+                    <!-- /.categories-item -->
+                    <li class="categories-item">
+                      <a href="#"> Social Marketing </a>
+                    </li>
+                    <!-- /.categories-item -->
+                    <li class="categories-item">
+                      <a href="#"> Technology </a>
+                    </li>
+                    <!-- /.categories-item -->
+                    <li class="categories-item">
+                      <a href="#"> Business & Finance </a>
+                    </li>
+                    <!-- /.categories-item -->
+                    <li class="categories-item">
+                      <a href="#"> Digital Solution </a>
+                    </li>
+                    <!-- /.categories-item -->
+                  </ul>
+                  <!-- /.list-categories -->
+                </div>
+                <!-- /.categories -->
+                <div class="tags">
+                  <h4 class="title">Tags</h4>
+                  <div class="sidebar-tags">
+                    <a href="#">Marketing</a>
+                    <a href="#">Development</a>
+                    <a href="#">Digital</a>
+                    <a href="#">Design</a>
+                  </div>
+                </div>
+                <!-- /.tags -->
+                <div class="comments">
+                  <h4 class="title">Comments</h4>
+                  <ul class="list-comments">
+                    <li class="comment-item">
+                      <div class="icon">
+                        <span class="icon-commenting-o"></span>
+                      </div>
+                      <h6 class="comment-item__title">
+                        <a href="#"
+                          >There are many variations of Lorem available Here</a
+                        >
+                      </h6>
+                    </li>
+                    <!-- /.comment-item -->
+                    <li class="comment-item">
+                      <div class="icon">
+                        <span class="icon-commenting-o"></span>
+                      </div>
+                      <h6 class="comment-item__title">
+                        <a href="#"
+                          >There are many variations of Lorem available Here</a
+                        >
+                      </h6>
+                    </li>
+                    <!-- /.comment-item -->
+                    <li class="comment-item">
+                      <div class="icon">
+                        <span class="icon-commenting-o"></span>
+                      </div>
+                      <h6 class="comment-item__title">
+                        <a href="#"
+                          >There are many variations of Lorem available Here</a
+                        >
+                      </h6>
+                    </li>
+                    <!-- /.comment-item -->
+                    <li class="comment-item">
+                      <div class="icon">
+                        <span class="icon-commenting-o"></span>
+                      </div>
+                      <h6 class="comment-item__title">
+                        <a href="#"
+                          >There are many variations of Lorem available Here</a
+                        >
+                      </h6>
+                    </li>
+                    <!-- /.comment-item -->
+                  </ul>
+                  <!-- /.list-comments -->
+                </div>
+                <!-- /.comments -->
+              </div>
+            </div>
+            <!-- /.sidebar -->
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.blog -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top__inner">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <a href="index.html" class="footer-logo">
+                <img src="./images/logo-light.png" alt="logo footer" />
+              </a>
+            </div>
+            <div class="col-12 col-md-6">
+              <ul class="footer-social__icon">
+                <li>
+                  <a href="#">
+                    <span class="icon-facebook"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon-linkedin2"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon-twitter"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon-instagram"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--/.row-->
+        </div>
+        <!-- /.footer-top__inner -->
+        <div class="footer__middle">
+          <div class="row">
+            <div class="col-12 col-md-6 col-xl-2">
+              <div class="footer-widget">
+                <h4 class="footer-widget__title">Company</h4>
+                <ul class="footer-widget__links">
+                  <li class="footer-widget__item">
+                    <a href="#">About Us</a>
+                  </li>
+                  <li class="footer-widget__item">
+                    <a href="#">Blog</a>
+                  </li>
+                  <li class="footer-widget__item">
+                    <a href="#">Meet the Team</a>
+                  </li>
+                  <li class="footer-widget__item">
+                    <a href="#">Contact Now</a>
+                  </li>
+                </ul>
+                <!-- /.footer-widget__links -->
+              </div>
+              <!-- /.footer-widget -->
+            </div>
+            <div class="col-12 col-md-6 col-xl-2">
+              <div class="footer-widget">
+                <h4 class="footer-widget__title">Links</h4>
+                <ul class="footer-widget__links">
+                  <li class="footer-widget__item">
+                    <a href="#">Social Marketing</a>
+                  </li>
+                  <li class="footer-widget__item">
+                    <a href="#">Paid Search Engine</a>
+                  </li>
+                  <li class="footer-widget__item">
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li class="footer-widget__item">
+                    <a href="#">Help</a>
+                  </li>
+                </ul>
+                <!-- /.footer-widget__links -->
+              </div>
+              <!-- /.footer-widget -->
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="footer-widget">
+                <h4 class="footer-widget__title">Contact</h4>
+                <ul class="footer-widget__infor">
+                  <span>
+                    6391 Elgin St. Celina, Delaware <br />
+                    New York. USA
+                  </span>
+                  <li class="footer-widget__item">
+                    <span class="icon-phone_in_talk"></span>
+                    <a href="tel:(303) 555-0105">(303) 555-0105</a>
+                  </li>
+                  <li class="footer-widget__item">
+                    <span class="icon-envelope"></span>
+                    <a href="mailto:michael.mitc@example.com">
+                      michael.mitc@example.com
+                    </a>
+                  </li>
+                </ul>
+                <!-- /.footer-widget__links -->
+              </div>
+              <!-- /.footer-widget -->
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="footer-widget">
+                <h4 class="footer-widget__title">Newsletter</h4>
+                <form class="footer-widget__newletters">
+                  <input type="email" placeholder="Email Address" />
+                  <button type="submit">Subscribe</button>
+                </form>
+                <!-- /.footer-widget__links -->
+              </div>
+              <!-- /.footer-widget -->
+            </div>
+          </div>
+        </div>
+        <!--/.footer__middle-->
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__botton__inner">
+          <p class="footer__botton__copyright">
+            © Copyright 2023 by Company.com
+          </p>
+        </div>
+      </div>
+      <!--/.footer__bottom-->
+    </footer>
+    <!-- /.footer -->
+
+    <div
+      class="mobile-nav__content offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="logo-box">
+        <a href="index.html">
+          <img src="./images/logo-light.png" alt="logo" />
+        </a>
+      </div>
+      <!-- /.logo box -->
+      <button
+        type="button"
+        class="mobile-nav__close btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      >
+        x
+      </button>
+      <div class="mobile-nav__cotainer">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav-subnav">
+            <a href="#">Home</a>
+          </li>
+          <li class="mobile-nav-subnav">
+            <a href="#">About</a>
+          </li>
+          <li class="mobile-nav-subnav">
+            <a href="#">
+              Pages
+              <button class="btn-show-subnav-content" type="button">
+                <span class="icon-chevron-right"></span>
+              </button>
+            </a>
+            <ul class="subnav-content">
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+              <li><a href="#">Service 3</a></li>
+              <li><a href="#">Service 4</a></li>
+              <li><a href="#">Service 5</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav-subnav">
+            <a href="#">
+              Pages
+              <button class="btn-show-subnav-content" type="button">
+                <span class="icon-chevron-right"></span>
+              </button>
+            </a>
+            <ul class="subnav-content">
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li>
+              <li><a href="#">Page 4</a></li>
+              <li><a href="#">Page 5</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav-subnav">
+            <a href="#">Shop</a>
+          </li>
+          <li class="mobile-nav-subnav">
+            <a href="#">Blog</a>
+          </li>
+          <li class="mobile-nav-subnav">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.mobile-nav__list -->
+      <ul class="mobile-nav__contact">
+        <li>
+          <span class="icon-envelope"></span>
+          <a href="mailtp:needhelp@nionx.com">needhelp@nionx.com</a>
+        </li>
+        <li>
+          <span class="icon-phone"></span>
+          <a href="tel:0123456">0123456</a>
+        </li>
+      </ul>
+      <ul class="mobile-nav__social">
+        <li>
+          <a href="#">
+            <span class="icon-facebook"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-pinterest"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-instagram"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /navbar menu mobile -->
+    <!--------------------------------------- Javascrip -------------------------------------------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script>
+      function handleToggleMobileNav() {
+        const btnNavMobile = $(".btn-show-subnav-content");
+        btnNavMobile.each(function () {
+          $(this).on("click", function () {
+            var liElement = this.closest("li");
+            liElement.classList.toggle("active");
+            $(this).closest("a").next(".subnav-content").slideToggle();
+          });
+        });
+      }
+      $(document).ready(() => {
+        handleToggleMobileNav();
+      });
+    </script>
+  </body>
 </html>
