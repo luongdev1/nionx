@@ -13,6 +13,8 @@
   *	Main content
   * Footer 
   * Mobile nav menu 
+  * Blog detail
+  * Blog sidebar
 */
 
 /* import */
@@ -1661,8 +1663,7 @@ body {
   background-color: var(--color-softPurple);
   font-weight: 500;
 }
-.comments-form {
-}
+
 .comments-form .title {
   color: var(--color-title);
   font-size: 30px;
@@ -1708,9 +1709,6 @@ body {
 .comments-form .btn:hover::before {
   width: 100%;
   left: auto;
-}
-
-.widget-area {
 }
 .widget-area .form-search {
   background-color: var(--color-softPurple);
@@ -1809,6 +1807,9 @@ body {
   position: relative;
   font-weight: 500;
   color: rgba(108, 106, 114, 1);
+}
+.categories-item:hover a {
+  color: var(--color-title);
 }
 .categories-item a::before {
   margin-right: 7px;
