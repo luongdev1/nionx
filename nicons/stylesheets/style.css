@@ -21,7 +21,7 @@
   *	Header 
   *	Page Title
   * Blog Grid
-  * Blog v.1
+  * Blog List
   * Blog Single  
   * Widgets  
   * widget search
@@ -962,6 +962,9 @@ input[type="color"],
   align-items: center;
   gap: 24px;
 }
+.sidebar-right .sidebar-widget .news-blogs li img {
+  max-width: fit-content;
+}
 .sidebar-right .sidebar-widget .news-blogs li:not(:last-child) {
   margin-bottom: 35px;
 }
@@ -976,14 +979,13 @@ input[type="color"],
   line-height: 26px;
   color: var(--color-text-gray-2);
 }
-.sidebar-right .sidebar-widget .news-blogs h4 {
+.sidebar-right .sidebar-widget .news-blogs h4 a {
   font-weight: 700;
   line-height: 26.8px;
   color: var(--color-heading);
   font-size: 16px;
 }
-.sidebar-right .sidebar-widget .categories {
-}
+
 .sidebar-right .sidebar-widget .categories li {
   display: flex;
   align-items: center;
@@ -1024,6 +1026,7 @@ input[type="color"],
   color: white;
   background-color: var(--color-primary);
 }
+
 /* Footer
 ------------------------------------------------------ */
 .footer {
