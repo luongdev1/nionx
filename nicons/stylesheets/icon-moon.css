@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?2cvlp9');
-  src:  url('../fonts/icomoon.eot?2cvlp9#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?2cvlp9') format('truetype'),
-    url('../fonts/icomoon.woff?2cvlp9') format('woff'),
-    url('../fonts/icomoon.svg?2cvlp9#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?1eh3c');
+  src:  url('../fonts/icomoon.eot?1eh3c#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1eh3c') format('truetype'),
+    url('../fonts/icomoon.woff?1eh3c') format('woff'),
+    url('../fonts/icomoon.svg?1eh3c#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-icon-group:before {
+  content: "\e90f";
+  color: #b80000;
+}
 .icon-menu:before {
   content: "\e90b";
   color: #fff;
@@ -55,11 +59,17 @@
 .icon-pinterest:before {
   content: "\e901";
 }
+.icon-arrow-left:before {
+  content: "\e911";
+}
 .icon-cheveron-down:before {
   content: "\e908";
 }
 .icon-arrow-thin-right:before {
   content: "\e909";
+}
+.icon-check:before {
+  content: "\e910";
 }
 .icon-person:before {
   content: "\e90a";
@@ -87,6 +97,9 @@
 }
 .icon-facebook:before {
   content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
 }
 .icon-twitter:before {
   content: "\ea96";
