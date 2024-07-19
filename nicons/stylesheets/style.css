@@ -945,18 +945,17 @@ input[type="color"],
   margin-bottom: 38px;
   padding-right: 47.71px;
 }
-.blog-list__container .blog-card button {
+.blog-list__container .blog-card a {
   display: inline-flex;
   align-items: center;
   gap: 30px;
   border: none;
   padding: 0;
+  color: var(--color-primary);
 }
-.blog-list__container .blog-card button > div {
+.blog-list__container .blog-card a > span {
   display: inline-flex;
   align-items: center;
-}
-.blog-list__container .blog-card button > span {
   color: var(--color-primary);
   font-size: 14px;
   font-weight: 600;
@@ -964,23 +963,29 @@ input[type="color"],
   letter-spacing: 0.18em;
   text-align: left;
 }
-.blog-list__container .blog-card button > div::after {
+.blog-list__container .blog-card a > span::after {
   content: "\e906";
   font-family: "icomoon";
-  font-size: 10px;
+  font-size: 14px;
   color: var(--color-primary);
   border: 1px solid rgba(232, 242, 249, 1);
   padding: 5px;
   border-radius: 50%;
   margin-left: -13px;
 }
-.blog-list__container .blog-card button > div::before {
+.blog-list__container .blog-card a > span::before {
   display: block;
   content: "";
   width: 40px;
   height: 0.5px;
   background-color: var(--color-primary);
-  z-index: 1;
+}
+.blog-list__container .blog-card a:hover,
+.blog-list__container .blog-card a:hover > span::after {
+  color: var(--color-black);
+}
+.blog-list__container .blog-card a:hover > span::before {
+  background-color: var(--color-black);
 }
 
 .sidebar-right .sidebar-widget .heading {
@@ -1183,7 +1188,6 @@ input[type="color"],
   line-height: 56px;
   color: var(--color-heading);
   margin-bottom: 40px;
-
 }
 .blog-detail__container .ux-content img {
   width: 100%;
