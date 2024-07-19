@@ -1064,8 +1064,8 @@ input[type="color"],
 .sidebar-right .sidebar-widget .categories li > button {
   border: none;
 }
-.sidebar-right .sidebar-widget .categories li > h5,
-.sidebar-right .sidebar-widget .categories li > button {
+.sidebar-right .sidebar-widget .categories li > h5 a,
+.sidebar-right .sidebar-widget .categories li > a {
   color: var(--color-heading);
   font-size: 18px;
   font-weight: 400;
@@ -1073,8 +1073,8 @@ input[type="color"],
   text-align: left;
   transition: all 400ms ease-in;
 }
-.sidebar-right .sidebar-widget .categories li:hover > h5,
-.sidebar-right .sidebar-widget .categories li:hover > button {
+.sidebar-right .sidebar-widget .categories li:hover > h5 a,
+.sidebar-right .sidebar-widget .categories li:hover > a {
   color: var(--color-primary);
 }
 .sidebar-right .sidebar-widget .popular-tags ul {
