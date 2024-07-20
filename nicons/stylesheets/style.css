@@ -551,7 +551,6 @@ input[type="color"],
   right: 0;
   display: flex;
   max-height: 105px;
-  overflow: hidden;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -575,8 +574,8 @@ input[type="color"],
 .mainnav .menu .menu-item {
   position: relative;
   padding: 0px 37.5px;
-  padding-top: 36px;
-  padding-bottom: 46px;
+  padding-top: 35px;
+  padding-bottom: 47px;
   color: var(--color-white);
 }
 .mainnav .menu .menu-item.current-select {
@@ -588,7 +587,7 @@ input[type="color"],
   left: 0;
   height: 2px;
   width: 100%;
-  bottom: 3px;
+  bottom: 0px;
 }
 .mainnav .menu .menu-item:hover,
 .mainnav .menu .menu-item.current-select {
