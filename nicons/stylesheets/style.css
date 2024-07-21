@@ -313,7 +313,6 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--color-primary);
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease-in-out;
@@ -552,13 +551,13 @@ input[type="color"],
   display: flex;
   max-height: 105px;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   border-bottom: 1px solid rgba(217, 217, 217, 0.13);
 }
 .header-left {
   padding-left: 52px;
   padding-right: 121px;
+  align-self: center;
 }
 
 .mainnav {
@@ -673,6 +672,8 @@ input[type="color"],
 }
 .header-right {
   display: inline-flex;
+  max-height: 104px;
+  overflow: hidden;
 }
 .header-right .search-btn {
   border: none;
@@ -681,6 +682,10 @@ input[type="color"],
 .header-right .search-btn span {
   font-size: 33px;
   color: var(--color-white);
+  transition: color 300ms ease-in;
+}
+.header-right .search-btn:hover span {
+  color: var(--color-primary);
 }
 .header-right .menu-btn {
   position: relative;
@@ -772,9 +777,12 @@ input[type="color"],
   text-align: center;
   line-height: 75px;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 300ms ease;
 }
 .blog-post .blog-post__img:hover a {
   visibility: visible;
+  opacity: 1;
 }
 
 .blog-post .blog-post__content {
@@ -865,7 +873,7 @@ input[type="color"],
   width: 59.74px;
   height: 50px;
   background-color: var(--color-white);
-  transition: all 500ms ease;
+  transition: all 300ms ease;
 }
 .widget-pagination li.active a,
 .widget-pagination li:hover a {
@@ -928,6 +936,10 @@ input[type="color"],
 .blog-list__container .meta ul a {
   color: var(--color-text-gray-2);
 }
+.blog-list__container .meta ul a:hover {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
 .blog-list__container .title {
   font-size: 33px;
   font-weight: 700;
@@ -986,11 +998,13 @@ input[type="color"],
 .blog-list__container .blog-card a:hover > span::before {
   background-color: var(--color-black);
 }
-
-.sidebar-right .sidebar-widget .heading {
+.sidebar {
+  padding-left: 40px;
+}
+.sidebar .sidebar-widget .widget-title {
   font-size: 22px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 21px;
   letter-spacing: -0.02em;
   text-align: left;
   color: var(--color-heading);
@@ -998,22 +1012,22 @@ input[type="color"],
   border-left: 2px solid var(--color-primary);
   margin-bottom: 20px;
 }
-.sidebar-right .sidebar-widget {
-  padding: 34px 32px 32px 34px;
+.sidebar .sidebar-widget {
+  padding: 39px 32px 32px 34px;
   background-color: var(--bg-widget-sidebar);
   margin-bottom: 29px;
 }
-.sidebar-right .sidebar-widget .search-widget .input-wrap {
+.sidebar .sidebar-widget .widget-search .input-wrap {
   display: flex;
   align-items: center;
   background-color: var(--color-white);
 }
-.sidebar-right .sidebar-widget .search-widget button {
+.sidebar .sidebar-widget .widget-search button {
   border: none;
   padding: 0;
   margin-right: 28.33px;
 }
-.sidebar-right .sidebar-widget .search-widget input {
+.sidebar .sidebar-widget .widget-search input {
   border: none;
   flex-grow: 1;
   padding: 14px 0px 15px 15px;
@@ -1022,49 +1036,53 @@ input[type="color"],
   text-align: left;
   margin: 0;
 }
-.sidebar-right .sidebar-widget .search-widget span {
+.sidebar .sidebar-widget .widget-search span {
   font-size: 25px;
   color: var(--color-text-gray-2);
 }
-.sidebar-right .sidebar-widget .news-blogs li {
+.sidebar .sidebar-widget .widget-news-blogs li {
   display: inline-flex;
   align-items: center;
   gap: 24px;
 }
-.sidebar-right .sidebar-widget .news-blogs li img {
+.sidebar .sidebar-widget .widget-news-blogs li img {
   max-width: fit-content;
 }
-.sidebar-right .sidebar-widget .news-blogs li:not(:last-child) {
+.sidebar .sidebar-widget .widget-news-blogs li:not(:last-child) {
   margin-bottom: 35px;
 }
-.sidebar-right .sidebar-widget .news-blogs .date span {
+.sidebar .sidebar-widget .widget-news-blogs .date span {
   color: var(--color-primary);
   margin-right: 7px;
 }
-.sidebar-right .sidebar-widget .news-blogs .date p {
+.sidebar .sidebar-widget .widget-news-blogs .date p {
   display: inline;
   font-size: 15px;
   font-weight: 500;
   line-height: 26px;
   color: var(--color-text-gray-2);
 }
-.sidebar-right .sidebar-widget .news-blogs h4 a {
+.sidebar .sidebar-widget .widget-news-blogs h4 a {
   font-weight: 700;
   line-height: 26.8px;
   color: var(--color-heading);
   font-size: 16px;
 }
+.sidebar .sidebar-widget .widget-news-blogs h4:hover a {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
 
-.sidebar-right .sidebar-widget .categories li {
+.sidebar .sidebar-widget .widget-categories li {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.sidebar-right .sidebar-widget .categories li > button {
+.sidebar .sidebar-widget .widget-categories li > button {
   border: none;
 }
-.sidebar-right .sidebar-widget .categories li > h5 a,
-.sidebar-right .sidebar-widget .categories li > a {
+.sidebar .sidebar-widget .widget-categories li > h5 a,
+.sidebar .sidebar-widget .widget-categories li > a {
   color: var(--color-heading);
   font-size: 18px;
   font-weight: 400;
@@ -1072,16 +1090,16 @@ input[type="color"],
   text-align: left;
   transition: all 400ms ease-in;
 }
-.sidebar-right .sidebar-widget .categories li:hover > h5 a,
-.sidebar-right .sidebar-widget .categories li:hover > a {
+.sidebar .sidebar-widget .widget-categories li:hover > h5 a,
+.sidebar .sidebar-widget .widget-categories li:hover > a {
   color: var(--color-primary);
 }
-.sidebar-right .sidebar-widget .popular-tags ul {
+.sidebar .sidebar-widget .widget-popular-tags ul {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 13.44px;
 }
-.sidebar-right .sidebar-widget .popular-tags li a {
+.sidebar .sidebar-widget .widget-popular-tags li a {
   display: block;
   font-size: 14px;
   font-weight: 400;
@@ -1091,22 +1109,16 @@ input[type="color"],
   background-color: var(--color-white);
   transition: all 400ms ease-in;
 }
-.sidebar-right .sidebar-widget .popular-tags li:hover a {
+.sidebar .sidebar-widget .widget-popular-tags li:hover a {
   color: white;
   background-color: var(--color-primary);
 }
 /* Blog Details
 ------------------------------------------------------ */
-.blog-detail .area-1 {
-  padding-right: 0px;
-}
-.blog-detail .area-2 {
-  padding-left: 55px;
-}
-.blog-detail__container .side-blog {
+.blog-detail__container .post-wrap {
   padding-left: 14px;
 }
-.blog-detail__container .side-blog > img {
+.blog-detail__container .post-wrap > img {
   margin-bottom: 29px;
 }
 .blog-detail__container .meta {
@@ -1131,14 +1143,18 @@ input[type="color"],
 .blog-detail__container .meta ul a {
   color: var(--color-text-gray-2);
 }
-.blog-detail__container .side-blog .title {
+.blog-detail__container .meta ul a:hover {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+.blog-detail__container .post-wrap .title {
   font-size: 32px;
   font-weight: 700;
   line-height: 44.2px;
   margin-bottom: 23px;
   color: var(--color-heading);
 }
-.blog-detail__container .side-blog > .content {
+.blog-detail__container .post-wrap > .content {
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
@@ -1235,6 +1251,11 @@ input[type="color"],
   border: 1px solid rgba(246, 243, 238, 1);
   padding-left: 16.32px;
   padding-right: 32.48px;
+}
+.blog-detail .share-blog .tag-blog .tag a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transition: all 0.3s ease;
 }
 .blog-detail .social-blog > span {
   font-size: 20px;
@@ -1354,6 +1375,11 @@ input[type="color"],
   content: "\e906";
   font-family: "icomoon";
   vertical-align: middle;
+}
+.blog-detail .comment-single .comment .infor a:hover,
+.blog-detail .comment-single .comment .infor a:hover::after {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
 }
 .blog-detail .comment-single .comment-children {
   padding-left: 75px;
@@ -1523,6 +1549,11 @@ input[type="color"],
 .footer-widgets .area-3 .widget-menu {
   line-height: 44px;
 }
+.footer-copyright .widget-links li a:hover,
+.footer-widgets .area-3 .widget-menu li a:hover {
+  transition: color 300ms ease;
+  color: var(--color-primary);
+}
 .footer-widgets .area-4 .widget-form__input {
   display: inline-flex;
   align-items: center;
@@ -1540,6 +1571,10 @@ input[type="color"],
   padding: 0;
   color: var(--color-white);
   font-size: 17px;
+}
+.footer-widgets .area-4 .widget-form__input button:hover span {
+  color: var(--color-primary);
+  transition: color 300ms ease;
 }
 .footer-widgets .area-4 .widget-form__checkbox {
   display: inline-flex;
