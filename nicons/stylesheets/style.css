@@ -1238,6 +1238,11 @@ input[type="color"],
   padding: 15px 0;
   font-family: "Play";
 }
+.blog-detail .form-comment button:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  transition: all 300ms ease;
+}
 /* Contact Us
 --------------------------------------------------- */
 
