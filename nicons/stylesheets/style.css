@@ -1513,10 +1513,6 @@ input[type="color"],
   padding-top: 85px;
   padding-bottom: 84px;
 }
-.footer-container {
-  max-width: 1300px;
-  margin: 0 auto;
-}
 .footer-widgets .widget-title {
   font-size: 22px;
   font-weight: 700;
