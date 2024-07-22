@@ -1133,9 +1133,6 @@ input[type="color"],
 }
 /* Blog Details
 ------------------------------------------------------ */
-.blog-detail .blog-detail__container .row .col-12 {
-  padding-right: 0;
-}
 .blog-detail__container .post-wrap {
   padding-left: 14px;
 }
@@ -1182,13 +1179,14 @@ input[type="color"],
   line-height: 32px;
   color: var(--color-text-gray-2);
   margin-bottom: 33px;
-  padding-right: 76px;
 }
 
 .blog-detail__container .post-wrap > .entry-content {
   margin-bottom: 10px;
 }
-
+.blog-detail__container .post-wrap > .entry-content .content {
+  padding-right: 76px;
+}
 .blog-detail__container .blockquote-blog {
   background-image: url(../images/blog/quote.jpg);
   background-position: center;
@@ -1328,7 +1326,7 @@ input[type="color"],
   justify-content: space-between;
   gap: 89px;
   align-items: start;
-  margin-bottom: 65px;
+  margin-bottom: 85px;
 }
 .blog-detail .service-blog .previous-blog,
 .blog-detail .service-blog .next-blog {
@@ -1364,7 +1362,7 @@ input[type="color"],
   margin-right: 10px;
 }
 .blog-detail .comment-single {
-  margin-bottom: 65px;
+  margin-bottom: 20px;
 }
 .blog-detail .comment-single .title,
 .blog-detail .form-comment .title {
@@ -1436,7 +1434,7 @@ input[type="color"],
   font-weight: 600;
   line-height: 30px;
   color: var(--color-heading);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .blog-detail .form-comment input,
 .blog-detail .form-comment textarea {
@@ -1444,6 +1442,9 @@ input[type="color"],
   border: none;
   font-weight: 400;
   line-height: 30px;
+}
+.blog-detail .form-comment .button-wrap {
+  padding-right: 31px;
 }
 .blog-detail .form-comment button {
   border: none;
@@ -1454,6 +1455,7 @@ input[type="color"],
   line-height: 20.83px;
   width: 100%;
   padding: 15px 0;
+  font-family: "Play";
 }
 
 /* Footer
