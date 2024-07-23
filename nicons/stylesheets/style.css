@@ -926,7 +926,7 @@ input[type="color"],
 .blog-post .blog-post__content .blog-post__date span {
   color: var(--color-text-gray);
 }
-.blog-post .blog-post__content .title-top {
+.blog-post .blog-post__content .meta a {
   font-size: 16px;
   font-weight: 700;
   line-height: 17.83px;
