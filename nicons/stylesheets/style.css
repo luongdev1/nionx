@@ -34,7 +34,12 @@
   * Widget sidebar
   * Widget next previous post
   * Widget button
+  * Widget about company
   * Widget title section
+  * Widget count
+  * Widget our project
+  * Widget-testimonias
+  * Client partner
   * Footer
   * Footer widget  
 */
@@ -55,6 +60,7 @@
   --bg-carousel: rgba(4, 7, 8, 1);
   --bg-widget-sidebar: rgba(245, 245, 245, 1);
   --bg-form-comment: rgba(245, 245, 245, 1);
+  --color-star: #ffb11b;
 }
 /* Reset
 -------------------------------------------------------------- */
@@ -610,7 +616,7 @@ input[type="color"],
 .mainnav .menu .menu-item.menu-item-has-children > a::after {
   position: absolute;
   right: -20px;
-  content: "\e908";
+  content: "\e90d";
   font-family: "icomoon";
   font-weight: 700;
   font-size: 16px;
@@ -678,7 +684,7 @@ input[type="color"],
   margin-right: 40px;
 }
 .header-right .search-btn span {
-  font-size: 33px;
+  font-size: 20px;
   color: var(--color-white);
   transition: color 300ms ease-in;
 }
@@ -852,11 +858,11 @@ input[type="color"],
   color: var(--color-primary);
 }
 .page-title .page-title__breadcrumb li a::after {
-  content: "\e906";
+  content: "\e90c";
   font-family: "icomoon";
   padding: 0 10px;
   color: var(--color-white);
-  font-size: 9px;
+  font-size: 18px;
 }
 .main-content {
   padding: 135px 0;
@@ -1041,8 +1047,12 @@ input[type="color"],
   border: none;
   padding: 0;
   color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
 }
 .blog-list__container .blog-card a > span {
+  position: relative;
   display: inline-flex;
   align-items: center;
   color: var(--color-primary);
@@ -1051,22 +1061,27 @@ input[type="color"],
   line-height: 22px;
   letter-spacing: 0.18em;
   text-align: left;
+  padding-right: 40px;
 }
 .blog-list__container .blog-card a > span::after {
-  content: "\e906";
+  position: absolute;
+  right: -42%;
+  content: "\e90c";
   font-family: "icomoon";
   font-size: 14px;
   color: var(--color-primary);
   border: 1px solid rgba(232, 242, 249, 1);
-  padding: 5px;
+  padding: 5px 6px;
   border-radius: 50%;
-  margin-left: -13px;
+  z-index: -1;
 }
 .blog-list__container .blog-card a > span::before {
+  position: absolute;
+  right: 0;
   display: block;
   content: "";
   width: 40px;
-  height: 0.5px;
+  height: 1.5px;
   background-color: var(--color-primary);
 }
 .blog-list__container .blog-card a:hover,
@@ -1387,7 +1402,7 @@ input[type="color"],
   gap: 17.19px;
   padding-left: 20px;
 }
-.widget-pagination li:first-child {
+.widget-pagination li:last-child {
   transform: rotate(180deg);
 }
 .widget-pagination li:last-child,
@@ -1610,7 +1625,7 @@ input[type="color"],
 .widget-button::after {
   position: absolute;
   right: 35px;
-  content: "\e913";
+  content: "\e919";
   font-family: "icomoon";
   font-size: 15px;
   vertical-align: middle;
@@ -1643,17 +1658,17 @@ input[type="color"],
   opacity: 0.5;
   transition: opacity 300ms ease-in;
 }
-/* Widget box title section
+/* Widget about company
 ------------------------------------------------------ */
-.widget-title-section > .col-lg-5 {
+.widget-about-company > .col-lg-5 {
   padding-right: 0;
   margin-right: 61px;
 }
-.widget-title-section .img-wrap {
+.widget-about-company .img-wrap {
   position: relative;
   max-width: 534px;
 }
-.widget-title-section .img-wrap::after {
+.widget-about-company .img-wrap::after {
   position: absolute;
   content: "";
   width: 12px;
@@ -1662,40 +1677,41 @@ input[type="color"],
   top: 22px;
   bottom: 20px;
 }
-.widget-title-section .img-wrap img {
+.widget-about-company .img-wrap img {
   width: 100%;
 }
-.widget-title-section .infor {
-  display: inline-flex;
-  gap: 21px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  padding: 49px 50px 58px 31px;
-}
-.widget-title-section .infor span {
-  font-size: 60px;
-}
-.widget-title-section .infor .count h3,
-.widget-title-section .infor .count p {
-  font-family: "Play";
-  font-weight: 700;
-  letter-spacing: 0.01em;
-}
-.widget-title-section .infor .count h3 {
-  font-size: 50px;
-  line-height: 45px;
-}
-.widget-title-section .infor .count p {
-  font-size: 20px;
-  padding-left: 10px;
-  word-spacing: 5px;
-}
-.widget-title-section .content {
+.widget-about-company .content {
   padding-top: 9px;
 }
+.widget-about-company .icon-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 30px;
+  padding-right: 127px;
+}
+.widget-about-company .icon-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.widget-about-company .icon-list li::before {
+  content: "";
+  display: block;
+  background-color: var(--color-primary);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.widget-about-company .icon-list h6 {
+  font-family: "Play";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  color: var(--color-heading);
+}
+/* Widget title section
+------------------------------------------------------ */
 .widget-title-section .sub-heading {
   color: var(--color-primary);
   text-transform: uppercase;
@@ -1705,8 +1721,10 @@ input[type="color"],
   padding-bottom: 8px;
   border-bottom: 1px solid var(--color-primary);
   width: fit-content;
-  padding-right: 125px;
+  min-width: 280px;
   margin-bottom: 15px;
+  line-height: 27px;
+  padding-top: 7px;
 }
 .widget-title-section .heading {
   font-family: "Play";
@@ -1727,40 +1745,240 @@ input[type="color"],
   margin-bottom: 35px;
   border-bottom: 1px solid rgba(134, 137, 142, 0.6);
 }
-.widget-title-section .icon-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 30px;
-  padding-right: 127px;
-}
-.widget-title-section .icon-list li {
+/* Widget count
+-------------------------------------------------------*/
+.widget-count {
   display: inline-flex;
-  align-items: center;
-  gap: 12px;
-}
-.widget-title-section .icon-list li::before {
-  content: "";
-  display: block;
+  gap: 21px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   background-color: var(--color-primary);
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+  color: var(--color-white);
+  padding: 40px 54px 58px 31px;
 }
-.widget-title-section .icon-list h6 {
+.widget-count span {
+  font-size: 60px;
+  margin-top: 16px;
+}
+.widget-count .content h3,
+.widget-count .content p {
   font-family: "Play";
+  font-weight: 700;
+}
+.widget-count .content h3 {
+  font-size: 50px;
+  line-height: 45px;
+}
+.widget-count .content p {
+  font-size: 20px;
+  padding-left: 10px;
+  word-spacing: 5px;
+}
+/* Widget our projects
+-----------------------------------------------------  */
+.widget-our-projects {
+  padding-top: 108px;
+}
+.widget-our-projects .widget-title-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 53px;
+}
+.widget-our-projects .widget-title-section .sub-heading,
+.widget-our-projects .widget-title-section .heading {
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+.widget-our-projects .right {
+  padding-right: 45px;
+  align-self: center;
+  padding-bottom: 20px;
+}
+.widget-our-projects .right a {
+  font-weight: 700;
+  line-height: 20.83px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: var(--color-white);
+}
+.widget-our-projects .right a:hover {
+  transition: color 300ms ease-in;
+  color: var(--color-primary);
+}
+.widget-our-projects .right a::after {
+  content: "\e919";
+  font-family: "icomoon";
+  margin-left: 18px;
+}
+.widget-our-projects .col-lg-3 {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.widget-our-projects li {
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
+}
+.widget-our-projects img {
+  width: 100%;
+}
+.widget-our-projects .infor {
+  position: absolute;
+  inset: 0 6px;
+}
+.widget-our-projects .infor a {
+  display: block;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.widget-our-projects .infor .button-zoom::after,
+.widget-our-projects .infor .button-link::after {
+  font-family: "icomoon";
+}
+.widget-our-projects .infor .button-zoom::after {
+  content: "\e918";
+  font-size: 38px;
+}
+.widget-our-projects .infor .button-link::after {
+  content: "\e917";
+  font-size: 33px;
+}
+.widget-our-projects .infor .button-zoom,
+.widget-our-projects .infor .button-link {
+  position: absolute;
+  right: 15px;
+  transform: translateX(100px);
+}
+.widget-our-projects .infor .button-zoom {
+  top: 21px;
+}
+.widget-our-projects .infor .button-link {
+  top: 81px;
+}
+.widget-our-projects .infor p,
+.widget-our-projects .infor h4 {
+  color: var(--color-white);
+}
+.widget-our-projects .infor p {
   font-size: 16px;
   font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.01em;
-  color: var(--color-heading);
+  letter-spacing: 0.14em;
+  margin-bottom: 4px;
 }
-/* Footer
------------------------------------------------------- */
-.footer {
-  background-color: var(--bg-footer);
-  width: 100%;
-  overflow: hidden;
+.widget-our-projects .infor h4 {
+  font-family: "Play";
+  font-size: 30px;
+  font-weight: 700;
 }
+.widget-our-projects .infor p,
+.widget-our-projects .infor h4 {
+  position: absolute;
+  left: 58px;
+  transform: translateY(100px);
+}
+.widget-our-projects .infor p {
+  bottom: 62px;
+}
+.widget-our-projects .infor h4 {
+  bottom: 39px;
+}
+.widget-our-projects li:hover .infor,
+.widget-our-projects li:hover .button-zoom,
+.widget-our-projects li:hover .button-link,
+.widget-our-projects li:hover .infor p,
+.widget-our-projects li:hover .infor h4 {
+  transition: all 300ms ease-in;
+}
+.widget-our-projects li:hover .infor {
+  background-color: rgba(196, 6, 6, 0.51);
+}
+.widget-our-projects li:hover .button-zoom,
+.widget-our-projects li:hover .button-link {
+  transform: translateX(0);
+}
+.widget-our-projects li:hover .infor p,
+.widget-our-projects li:hover .infor h4 {
+  transform: translateY(0);
+}
+/* Widget testimonias
+-----------------------------------------------------  */
+.widget-testimonias {
+  background-color: #f5f5f5;
+}
+.widget-testimonias > .col-lg-7 {
+  width: fit-content;
+  margin-right: 52px;
+}
+.widget-testimonias .widget-title-section {
+  padding-top: 120px;
+  margin-bottom: 58px;
+}
+.widget-testimonias ul {
+  display: flex;
+  margin-left: 12px;
+  gap: 10px;
+  margin-bottom: 17px;
+}
+.widget-testimonias ul li > span {
+  color: var(--color-star);
+}
+.widget-testimonias p {
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+  margin-bottom: 27px;
+  max-width: 520px;
+}
+.widget-testimonias .line {
+  position: relative;
+  max-width: 500px;
+  height: 6px;
+  background-color: var(--color-primary);
+  margin-bottom: 34px;
+}
+.widget-testimonias .line::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  border: 20px solid;
+  left: 13px;
+  border-color: var(--color-primary) transparent transparent transparent;
+}
+.widget-testimonias .user {
+  display: inline-flex;
+  margin-left: -16px;
+  gap: 15px;
+}
+.widget-testimonias .infor {
+  padding-top: 8px;
+}
+.widget-testimonias .infor h4,
+.widget-testimonias .infor span {
+  font-family: "Play";
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+}
+.widget-testimonias .infor h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.widget-testimonias .infor span {
+  font-family: "Play";
+  text-align: left;
+}
+/* Widget list leadership 
+----------------------------------------------------*/
+
+/* Client partner
+-----------------------------------------------------*/
 .client-partner {
   width: 100%;
   background-color: var(--bg-carousel);
@@ -1787,7 +2005,7 @@ input[type="color"],
 }
 .client-partner .client-partner__container ul > li::before {
   font-family: "icomoon";
-  content: "\e904";
+  content: "\e907";
   color: var(--color-white);
   font-size: 30px;
   margin: 0 30px;
@@ -1795,6 +2013,13 @@ input[type="color"],
 .client-partner .client-partner__container ul > li:nth-child(2) h2,
 .client-partner .client-partner__container ul > li:nth-child(2)::before {
   color: var(--color-primary);
+}
+/* Footer
+------------------------------------------------------ */
+.footer {
+  background-color: var(--bg-footer);
+  width: 100%;
+  overflow: hidden;
 }
 .footer-widgets {
   border-bottom: 1px solid rgba(242, 242, 242, 0.07);
