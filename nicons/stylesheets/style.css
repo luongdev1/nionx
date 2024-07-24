@@ -1661,12 +1661,15 @@ input[type="color"],
 /* Widget about company
 ------------------------------------------------------ */
 .widget-about-company > .col-lg-5 {
-  padding-right: 0;
-  margin-right: 61px;
+  padding: 0;
+  padding-right: 14px;
 }
 .widget-about-company .img-wrap {
   position: relative;
-  max-width: 534px;
+}
+.widget-about-company .content-wrap {
+  padding-left: 52px;
+  padding-top: 7px;
 }
 .widget-about-company .img-wrap::after {
   position: absolute;
@@ -1684,8 +1687,9 @@ input[type="color"],
   padding-top: 9px;
 }
 .widget-about-company .icon-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 28px;
   margin-bottom: 30px;
   padding-right: 127px;
 }
@@ -1724,7 +1728,6 @@ input[type="color"],
   min-width: 280px;
   margin-bottom: 15px;
   line-height: 27px;
-  padding-top: 7px;
 }
 .widget-title-section .heading {
   font-family: "Play";
@@ -1780,7 +1783,10 @@ input[type="color"],
 .widget-our-projects {
   padding-top: 108px;
 }
-.widget-our-projects .widget-title-section {
+.widget-our-projects > .row {
+  row-gap: 10px;
+}
+.widget-our-projects > .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1791,23 +1797,23 @@ input[type="color"],
   color: var(--color-white);
   border-color: var(--color-white);
 }
-.widget-our-projects .right {
+.widget-our-projects .area-right {
   padding-right: 45px;
   align-self: center;
   padding-bottom: 20px;
 }
-.widget-our-projects .right a {
+.widget-our-projects .area-right a {
   font-weight: 700;
   line-height: 20.83px;
   letter-spacing: 0.05em;
   text-align: center;
   color: var(--color-white);
 }
-.widget-our-projects .right a:hover {
+.widget-our-projects .area-right a:hover {
   transition: color 300ms ease-in;
   color: var(--color-primary);
 }
-.widget-our-projects .right a::after {
+.widget-our-projects .area-right a::after {
   content: "\e919";
   font-family: "icomoon";
   margin-left: 18px;
@@ -1913,9 +1919,18 @@ input[type="color"],
 .widget-testimonias {
   background-color: #f5f5f5;
 }
+.widget-testimonias .img-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .widget-testimonias .widget-title-section {
-  padding-top: 120px;
   margin-bottom: 58px;
+}
+.widget-testimonias .content-wrap {
+  margin-top: 125px;
+  margin-left: 55px;
+  margin-bottom: 97px;
 }
 .widget-testimonias ul {
   display: flex;
@@ -1970,7 +1985,7 @@ input[type="color"],
   font-family: "Play";
   text-align: left;
 }
-/* Widget list leadership 
+/* Widget leadership 
 ----------------------------------------------------*/
 
 /* Client partner
