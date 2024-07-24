@@ -1913,10 +1913,6 @@ input[type="color"],
 .widget-testimonias {
   background-color: #f5f5f5;
 }
-.widget-testimonias > .col-lg-7 {
-  width: fit-content;
-  margin-right: 52px;
-}
 .widget-testimonias .widget-title-section {
   padding-top: 120px;
   margin-bottom: 58px;
