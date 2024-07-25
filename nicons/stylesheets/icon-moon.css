@@ -61,7 +61,6 @@
 }
 .icon-next:before {
   content: "\e919";
-  color: #b80000;
 }
 .icon-back:before {
   content: "\e91a";
@@ -69,7 +68,6 @@
 }
 .icon-v-social:before {
   content: "\e91b";
-  color: #fff;
 }
 .icon-constructor:before {
   content: "\e900";

@@ -1987,7 +1987,94 @@ input[type="color"],
 }
 /* Widget leadership 
 ----------------------------------------------------*/
-
+.widget-leadership .leadership-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.widget-leadership .area-right {
+  align-self: center;
+  padding-top: 23px;
+  padding-right: 13px;
+}
+.widget-leadership .area-right .widget-button {
+  padding: 23px 74px 23px 24px;
+}
+.widget-leadership .row {
+  row-gap: 10px;
+}
+.widget-leadership .row .col-lg-4 {
+  padding: 0 15px;
+}
+.widget-leadership img {
+  width: 100%;
+}
+.widget-leadership .img-wrap {
+  position: relative;
+}
+.widget-leadership ul {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.widget-leadership ul li a {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+.widget-leadership ul li span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-primary);
+  font-size: 14px;
+}
+.widget-leadership ul li a,
+.widget-leadership ul li a span {
+  transition: all 300ms ease-in;
+}
+.widget-leadership ul li a:hover {
+  background-color: var(--color-primary);
+}
+.widget-leadership ul li a:hover span {
+  color: var(--color-white);
+}
+.widget-leadership .infor {
+  position: relative;
+  background-color: var(--color-primary);
+  padding: 28px 26px 19px;
+}
+.widget-leadership .infor h4,
+.widget-leadership .infor p,
+.widget-leadership .infor span {
+  color: var(--color-white);
+}
+.widget-leadership .infor h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin-bottom: 10px;
+}
+.widget-leadership .infor p {
+  font-family: "Play";
+}
+.widget-leadership .infor span {
+  position: absolute;
+  right: 50px;
+  bottom: 49px;
+  display: inline-block;
+  transform: rotate(316deg);
+  font-size: 18px;
+}
 /* Client partner
 -----------------------------------------------------*/
 .client-partner {
