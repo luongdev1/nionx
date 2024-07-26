@@ -43,7 +43,6 @@
 }
 .icon-fork:before {
   content: "\e915";
-  color: #b80000;
 }
 .icon-star:before {
   content: "\e916";
